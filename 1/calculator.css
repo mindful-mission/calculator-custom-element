@@ -1,1 +1,2808 @@
-co2-calculator .cdk-global-overlay-wrapper,co2-calculator .cdk-overlay-container{pointer-events:none;top:0;left:0;height:100%;width:100%}co2-calculator .cdk-overlay-container{position:fixed;z-index:1000}co2-calculator .cdk-overlay-container:empty{display:none}co2-calculator .cdk-global-overlay-wrapper,co2-calculator .cdk-overlay-pane{display:flex;position:absolute;z-index:1000}co2-calculator .cdk-overlay-pane{pointer-events:auto;box-sizing:border-box;max-width:100%;max-height:100%}co2-calculator .cdk-overlay-backdrop{position:absolute;top:0;bottom:0;left:0;right:0;z-index:1000;pointer-events:auto;-webkit-tap-highlight-color:transparent;transition:opacity .4s cubic-bezier(.25,.8,.25,1);opacity:0}co2-calculator .cdk-overlay-backdrop.cdk-overlay-backdrop-showing{opacity:1}@media screen and (-ms-high-contrast:active){co2-calculator .cdk-overlay-backdrop.cdk-overlay-backdrop-showing{opacity:.6}}co2-calculator .cdk-overlay-dark-backdrop{background:rgba(0,0,0,.32)}co2-calculator .cdk-overlay-transparent-backdrop,co2-calculator .cdk-overlay-transparent-backdrop.cdk-overlay-backdrop-showing{opacity:0}co2-calculator .cdk-overlay-connected-position-bounding-box{position:absolute;z-index:1000;display:flex;flex-direction:column;min-width:1px;min-height:1px}co2-calculator .cdk-global-scrollblock{position:fixed;width:100%;overflow-y:scroll/*! tailwindcss v2.0.3 | MIT License | https://tailwindcss.com *//*! modern-normalize v1.0.0 | MIT License | https://github.com/sindresorhus/modern-normalize */}co2-calculator :root{-moz-tab-size:4;tab-size:4}co2-calculator html{line-height:1.15;-webkit-text-size-adjust:100%}co2-calculator body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji}co2-calculator hr{height:0;color:inherit}co2-calculator abbr[title]{-webkit-text-decoration:underline dotted;text-decoration:underline dotted}co2-calculator b,co2-calculator strong{font-weight:bolder}co2-calculator code,co2-calculator kbd,co2-calculator pre,co2-calculator samp{font-family:ui-monospace,SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;font-size:1em}co2-calculator small{font-size:80%}co2-calculator sub,co2-calculator sup{font-size:75%;line-height:0;position:relative;vertical-align:initial}co2-calculator sub{bottom:-.25em}co2-calculator sup{top:-.5em}co2-calculator table{text-indent:0;border-color:inherit}co2-calculator button,co2-calculator input,co2-calculator optgroup,co2-calculator select,co2-calculator textarea{font-family:inherit;font-size:100%;line-height:1.15;margin:0}co2-calculator button,co2-calculator select{text-transform:none}co2-calculator [type=button],co2-calculator [type=reset],co2-calculator [type=submit],co2-calculator button{-webkit-appearance:button}co2-calculator legend{padding:0}co2-calculator progress{vertical-align:initial}co2-calculator [type=search]{-webkit-appearance:textfield;outline-offset:-2px}co2-calculator summary{display:list-item}co2-calculator blockquote,co2-calculator dd,co2-calculator dl,co2-calculator figure,co2-calculator h1,co2-calculator h2,co2-calculator h3,co2-calculator h4,co2-calculator h5,co2-calculator h6,co2-calculator hr,co2-calculator p,co2-calculator pre{margin:0}co2-calculator button{background-color:initial;background-image:none}co2-calculator button:focus{outline:1px dotted;outline:5px auto -webkit-focus-ring-color}co2-calculator fieldset,co2-calculator ol,co2-calculator ul{margin:0;padding:0}co2-calculator ol,co2-calculator ul{list-style:none}co2-calculator{font-family:proxima-nova,sans-serif;line-height:1.5}co2-calculator body{font-family:inherit;line-height:inherit}co2-calculator *,co2-calculator :after,co2-calculator :before{box-sizing:border-box;border:0 solid}co2-calculator hr{border-top-width:1px}co2-calculator img{border-style:solid}co2-calculator textarea{resize:vertical}co2-calculator input::placeholder,co2-calculator textarea::placeholder{opacity:1;color:#a1a1aa}co2-calculator button{cursor:pointer}co2-calculator table{border-collapse:collapse}co2-calculator h1,co2-calculator h2,co2-calculator h3,co2-calculator h4,co2-calculator h5,co2-calculator h6{font-size:inherit;font-weight:inherit}co2-calculator a{color:inherit;text-decoration:inherit}co2-calculator button,co2-calculator input,co2-calculator optgroup,co2-calculator select,co2-calculator textarea{padding:0;line-height:inherit;color:inherit}co2-calculator code,co2-calculator kbd,co2-calculator pre,co2-calculator samp{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace}co2-calculator audio,co2-calculator canvas,co2-calculator embed,co2-calculator iframe,co2-calculator img,co2-calculator object,co2-calculator svg,co2-calculator video{display:block;vertical-align:middle}co2-calculator img,co2-calculator video{max-width:100%;height:auto}co2-calculator .container{width:100%;margin-right:auto;margin-left:auto}@media (min-width:640px){co2-calculator .container{max-width:640px}}@media (min-width:768px){co2-calculator .container{max-width:768px}}@media (min-width:1024px){co2-calculator .container{max-width:1024px}}@media (min-width:1280px){co2-calculator .container{max-width:1280px}}@media (min-width:1595px){co2-calculator .container{max-width:1595px}}co2-calculator .bg-black{--tw-bg-opacity:1;background-color:rgba(0,0,0,var(--tw-bg-opacity))}co2-calculator .bg-white{--tw-bg-opacity:1;background-color:rgba(255,255,255,var(--tw-bg-opacity))}co2-calculator .bg-green-50{--tw-bg-opacity:1;background-color:rgba(252,255,245,var(--tw-bg-opacity))}co2-calculator .bg-green-75{--tw-bg-opacity:1;background-color:rgba(242,252,236,var(--tw-bg-opacity))}co2-calculator .bg-green-100{--tw-bg-opacity:1;background-color:rgba(216,243,214,var(--tw-bg-opacity))}co2-calculator .bg-green-200{--tw-bg-opacity:1;background-color:rgba(194,241,178,var(--tw-bg-opacity))}co2-calculator .bg-green-300{--tw-bg-opacity:1;background-color:rgba(176,232,133,var(--tw-bg-opacity))}co2-calculator .bg-green-400{--tw-bg-opacity:1;background-color:rgba(146,213,93,var(--tw-bg-opacity))}co2-calculator .bg-green-500{--tw-bg-opacity:1;background-color:rgba(90,181,75,var(--tw-bg-opacity))}co2-calculator .bg-green-600{--tw-bg-opacity:1;background-color:rgba(55,147,70,var(--tw-bg-opacity))}co2-calculator .bg-green-700{--tw-bg-opacity:1;background-color:rgba(39,108,54,var(--tw-bg-opacity))}co2-calculator .bg-green-800{--tw-bg-opacity:1;background-color:rgba(40,94,45,var(--tw-bg-opacity))}co2-calculator .bg-green-900{--tw-bg-opacity:1;background-color:rgba(34,78,41,var(--tw-bg-opacity))}co2-calculator .bg-green-shade{background-color:rgba(34,78,41,.031372549)}co2-calculator .bg-yellow-100{--tw-bg-opacity:1;background-color:rgba(255,250,201,var(--tw-bg-opacity))}co2-calculator .bg-yellow-200{--tw-bg-opacity:1;background-color:rgba(255,246,169,var(--tw-bg-opacity))}co2-calculator .bg-yellow-300{--tw-bg-opacity:1;background-color:rgba(255,227,122,var(--tw-bg-opacity))}co2-calculator .bg-yellow-500{--tw-bg-opacity:1;background-color:rgba(235,162,42,var(--tw-bg-opacity))}co2-calculator .bg-yellow-600{--tw-bg-opacity:1;background-color:rgba(206,125,34,var(--tw-bg-opacity))}co2-calculator .bg-yellow-800{--tw-bg-opacity:1;background-color:rgba(137,72,28,var(--tw-bg-opacity))}co2-calculator .bg-yellow-900{--tw-bg-opacity:1;background-color:rgba(113,60,27,var(--tw-bg-opacity))}co2-calculator .bg-blue-100{--tw-bg-opacity:1;background-color:rgba(226,237,243,var(--tw-bg-opacity))}co2-calculator .bg-blue-200{--tw-bg-opacity:1;background-color:rgba(214,239,250,var(--tw-bg-opacity))}co2-calculator .bg-blue-400{--tw-bg-opacity:1;background-color:rgba(103,203,247,var(--tw-bg-opacity))}co2-calculator .bg-blue-500{--tw-bg-opacity:1;background-color:rgba(67,158,233,var(--tw-bg-opacity))}co2-calculator .bg-blue-600{--tw-bg-opacity:1;background-color:rgba(49,130,206,var(--tw-bg-opacity))}co2-calculator .bg-blue-700{--tw-bg-opacity:1;background-color:rgba(43,108,176,var(--tw-bg-opacity))}co2-calculator .hover\:bg-green-shade:hover{background-color:rgba(34,78,41,.031372549)}co2-calculator .bg-gradient-to-r{background-image:linear-gradient(90deg,var(--tw-gradient-stops))}co2-calculator .bg-gradient-to-b{background-image:linear-gradient(180deg,var(--tw-gradient-stops))}co2-calculator .from-green-400{--tw-gradient-from:#92d55d;--tw-gradient-stops:var(--tw-gradient-from),var(--tw-gradient-to, rgba(146, 213, 93, 0))}co2-calculator .from-green-500{--tw-gradient-from:#5ab54b;--tw-gradient-stops:var(--tw-gradient-from),var(--tw-gradient-to, rgba(90, 181, 75, 0))}co2-calculator .from-green-600{--tw-gradient-from:#379346;--tw-gradient-stops:var(--tw-gradient-from),var(--tw-gradient-to, rgba(55, 147, 70, 0))}co2-calculator .from-yellow-500{--tw-gradient-from:#eba22a;--tw-gradient-stops:var(--tw-gradient-from),var(--tw-gradient-to, rgba(235, 162, 42, 0))}co2-calculator .via-green-600{--tw-gradient-stops:var(--tw-gradient-from),#379346,var(--tw-gradient-to, rgba(55, 147, 70, 0))}co2-calculator .to-green-300{--tw-gradient-to:#b0e885}co2-calculator .to-green-500{--tw-gradient-to:#5ab54b}co2-calculator .to-green-900{--tw-gradient-to:#224e29}co2-calculator .to-yellow-800{--tw-gradient-to:#89481c}co2-calculator .bg-opacity-5{--tw-bg-opacity:0.05}co2-calculator .bg-opacity-10{--tw-bg-opacity:0.1}co2-calculator .bg-opacity-20{--tw-bg-opacity:0.2}co2-calculator .bg-opacity-60{--tw-bg-opacity:0.6}co2-calculator .bg-opacity-90{--tw-bg-opacity:0.9}co2-calculator .bg-opacity-100{--tw-bg-opacity:1}co2-calculator .border-black{--tw-border-opacity:1;border-color:rgba(0,0,0,var(--tw-border-opacity))}co2-calculator .border-green-50{--tw-border-opacity:1;border-color:rgba(252,255,245,var(--tw-border-opacity))}co2-calculator .border-green-100{--tw-border-opacity:1;border-color:rgba(216,243,214,var(--tw-border-opacity))}co2-calculator .border-green-300{--tw-border-opacity:1;border-color:rgba(176,232,133,var(--tw-border-opacity))}co2-calculator .border-green-600{--tw-border-opacity:1;border-color:rgba(55,147,70,var(--tw-border-opacity))}co2-calculator .border-green-800{--tw-border-opacity:1;border-color:rgba(40,94,45,var(--tw-border-opacity))}co2-calculator .border-green-900{--tw-border-opacity:1;border-color:rgba(34,78,41,var(--tw-border-opacity))}co2-calculator .border-yellow-300{--tw-border-opacity:1;border-color:rgba(255,227,122,var(--tw-border-opacity))}co2-calculator .border-yellow-600{--tw-border-opacity:1;border-color:rgba(206,125,34,var(--tw-border-opacity))}co2-calculator .border-yellow-700{--tw-border-opacity:1;border-color:rgba(170,91,29,var(--tw-border-opacity))}co2-calculator .border-yellow-800{--tw-border-opacity:1;border-color:rgba(137,72,28,var(--tw-border-opacity))}co2-calculator .border-yellow-900{--tw-border-opacity:1;border-color:rgba(113,60,27,var(--tw-border-opacity))}co2-calculator .border-blue-300{--tw-border-opacity:1;border-color:rgba(147,218,240,var(--tw-border-opacity))}co2-calculator .border-blue-600{--tw-border-opacity:1;border-color:rgba(49,130,206,var(--tw-border-opacity))}co2-calculator .border-blue-800{--tw-border-opacity:1;border-color:rgba(44,82,130,var(--tw-border-opacity))}co2-calculator .border-opacity-0{--tw-border-opacity:0}co2-calculator .border-opacity-5{--tw-border-opacity:0.05}co2-calculator .border-opacity-10{--tw-border-opacity:0.1}co2-calculator .border-opacity-20{--tw-border-opacity:0.2}co2-calculator .rounded-md{border-radius:.375rem}co2-calculator .rounded-lg{border-radius:.5rem}co2-calculator .rounded-xl{border-radius:.75rem}co2-calculator .rounded-2xl{border-radius:1rem}co2-calculator .rounded-3xl{border-radius:1.5rem}co2-calculator .rounded-full{border-radius:9999px}co2-calculator .rounded-4xl{border-radius:5rem}co2-calculator .rounded-r-full{border-top-right-radius:9999px;border-bottom-right-radius:9999px}co2-calculator .rounded-l-full{border-top-left-radius:9999px;border-bottom-left-radius:9999px}co2-calculator .rounded-tl-lg{border-top-left-radius:.5rem}co2-calculator .rounded-tr-lg{border-top-right-radius:.5rem}co2-calculator .border-2{border-width:2px}co2-calculator .border{border-width:1px}co2-calculator .border-b-2{border-bottom-width:2px}co2-calculator .border-l-4{border-left-width:4px}co2-calculator .border-t{border-top-width:1px}co2-calculator .box-border{box-sizing:border-box}co2-calculator .cursor-pointer{cursor:pointer}co2-calculator .block{display:block}co2-calculator .inline-block{display:inline-block}co2-calculator .flex{display:flex}co2-calculator .table{display:table}co2-calculator .grid{display:grid}co2-calculator .hidden{display:none}co2-calculator .flex-row-reverse{flex-direction:row-reverse}co2-calculator .flex-col{flex-direction:column}co2-calculator .items-start{align-items:flex-start}co2-calculator .items-end{align-items:flex-end}co2-calculator .items-center{align-items:center}co2-calculator .content-center{align-content:center}co2-calculator .content-start{align-content:flex-start}co2-calculator .self-start{align-self:flex-start}co2-calculator .self-end{align-self:flex-end}co2-calculator .self-center{align-self:center}co2-calculator .justify-start{justify-content:flex-start}co2-calculator .justify-end{justify-content:flex-end}co2-calculator .justify-center{justify-content:center}co2-calculator .justify-between{justify-content:space-between}co2-calculator .justify-evenly{justify-content:space-evenly}co2-calculator .justify-self-start{justify-self:start}co2-calculator .justify-self-end{justify-self:end}co2-calculator .justify-self-center{justify-self:center}co2-calculator .flex-1{flex:1 1 0%}co2-calculator .flex-shrink-0{flex-shrink:0}co2-calculator .order-1{order:1}co2-calculator .order-2{order:2}co2-calculator .order-3{order:3}co2-calculator .order-4{order:4}co2-calculator .order-5{order:5}co2-calculator .order-6{order:6}co2-calculator .order-7{order:7}co2-calculator .font-normal{font-weight:400}co2-calculator .font-medium{font-weight:500}co2-calculator .font-semibold{font-weight:600}co2-calculator .font-bold{font-weight:700}co2-calculator .font-extrabold{font-weight:800}co2-calculator .font-black{font-weight:900}co2-calculator .h-0{height:0}co2-calculator .h-2{height:.5rem}co2-calculator .h-3{height:.75rem}co2-calculator .h-4{height:1rem}co2-calculator .h-5{height:1.25rem}co2-calculator .h-6{height:1.5rem}co2-calculator .h-7{height:1.75rem}co2-calculator .h-8{height:2rem}co2-calculator .h-10{height:2.5rem}co2-calculator .h-12{height:3rem}co2-calculator .h-14{height:3.5rem}co2-calculator .h-16{height:4rem}co2-calculator .h-20{height:5rem}co2-calculator .h-24{height:6rem}co2-calculator .h-28{height:7rem}co2-calculator .h-52{height:13rem}co2-calculator .h-60{height:15rem}co2-calculator .h-64{height:16rem}co2-calculator .h-72{height:18rem}co2-calculator .h-80{height:20rem}co2-calculator .h-96{height:24rem}co2-calculator .h-104{height:26rem}co2-calculator .h-auto{height:auto}co2-calculator .h-0\.5{height:.125rem}co2-calculator .h-1\/2{height:50%}co2-calculator .h-full{height:100%}co2-calculator .text-xs{font-size:.75rem;line-height:1rem}co2-calculator .text-sm{font-size:.875rem;line-height:1.25rem}co2-calculator .text-base{font-size:1rem;line-height:1.5rem}co2-calculator .text-lg{font-size:1.125rem}co2-calculator .text-lg,co2-calculator .text-xl{line-height:1.75rem}co2-calculator .text-xl{font-size:1.25rem}co2-calculator .text-2xl{font-size:1.5rem;line-height:2rem}co2-calculator .text-3xl{font-size:1.875rem;line-height:2.25rem}co2-calculator .text-4xl{font-size:2.25rem;line-height:2.5rem}co2-calculator .text-5xl{font-size:3rem;line-height:1}co2-calculator .text-7xl{font-size:4.5rem;line-height:1}co2-calculator .m-8{margin:2rem}co2-calculator .m-auto{margin:auto}co2-calculator .mx-1{margin-left:.25rem;margin-right:.25rem}co2-calculator .mx-2{margin-left:.5rem;margin-right:.5rem}co2-calculator .mx-3{margin-left:.75rem;margin-right:.75rem}co2-calculator .mx-4{margin-left:1rem;margin-right:1rem}co2-calculator .my-8{margin-top:2rem;margin-bottom:2rem}co2-calculator .mx-auto{margin-left:auto;margin-right:auto}co2-calculator .-mx-2{margin-left:-.5rem;margin-right:-.5rem}co2-calculator .-mx-3{margin-left:-.75rem;margin-right:-.75rem}co2-calculator .-mx-4{margin-left:-1rem;margin-right:-1rem}co2-calculator .-mx-5{margin-left:-1.25rem;margin-right:-1.25rem}co2-calculator .-mx-7{margin-left:-1.75rem;margin-right:-1.75rem}co2-calculator .-mx-28{margin-left:-7rem;margin-right:-7rem}co2-calculator .mb-0{margin-bottom:0}co2-calculator .mt-1{margin-top:.25rem}co2-calculator .mr-1{margin-right:.25rem}co2-calculator .mb-1{margin-bottom:.25rem}co2-calculator .ml-1{margin-left:.25rem}co2-calculator .mt-2{margin-top:.5rem}co2-calculator .mr-2{margin-right:.5rem}co2-calculator .mb-2{margin-bottom:.5rem}co2-calculator .ml-2{margin-left:.5rem}co2-calculator .mt-3{margin-top:.75rem}co2-calculator .mr-3{margin-right:.75rem}co2-calculator .mb-3{margin-bottom:.75rem}co2-calculator .ml-3{margin-left:.75rem}co2-calculator .mt-4{margin-top:1rem}co2-calculator .mr-4{margin-right:1rem}co2-calculator .mb-4{margin-bottom:1rem}co2-calculator .ml-4{margin-left:1rem}co2-calculator .mt-5{margin-top:1.25rem}co2-calculator .mr-5{margin-right:1.25rem}co2-calculator .mb-5{margin-bottom:1.25rem}co2-calculator .mt-6{margin-top:1.5rem}co2-calculator .mb-6{margin-bottom:1.5rem}co2-calculator .mt-8{margin-top:2rem}co2-calculator .mb-8{margin-bottom:2rem}co2-calculator .mt-10{margin-top:2.5rem}co2-calculator .mb-10{margin-bottom:2.5rem}co2-calculator .mt-12{margin-top:3rem}co2-calculator .mb-12{margin-bottom:3rem}co2-calculator .mt-14{margin-top:3.5rem}co2-calculator .mt-16{margin-top:4rem}co2-calculator .mt-20{margin-top:5rem}co2-calculator .mb-20{margin-bottom:5rem}co2-calculator .mt-24{margin-top:6rem}co2-calculator .mb-24{margin-bottom:6rem}co2-calculator .mt-28{margin-top:7rem}co2-calculator .mr-28{margin-right:7rem}co2-calculator .ml-28{margin-left:7rem}co2-calculator .mt-32{margin-top:8rem}co2-calculator .mb-32{margin-bottom:8rem}co2-calculator .mb-36{margin-bottom:9rem}co2-calculator .mt-40{margin-top:10rem}co2-calculator .mt-48{margin-top:12rem}co2-calculator .mb-56{margin-bottom:14rem}co2-calculator .mt-64{margin-top:16rem}co2-calculator .mt-72{margin-top:18rem}co2-calculator .mt-80{margin-top:20rem}co2-calculator .mt-96{margin-top:24rem}co2-calculator .ml-auto{margin-left:auto}co2-calculator .mb-0\.5{margin-bottom:.125rem}co2-calculator .-mt-6{margin-top:-1.5rem}co2-calculator .-ml-12{margin-left:-3rem}co2-calculator .-mt-16{margin-top:-4rem}co2-calculator .-mt-28{margin-top:-7rem}co2-calculator .-ml-80{margin-left:-20rem}co2-calculator .max-h-0{max-height:0}co2-calculator .max-h-44{max-height:11rem}co2-calculator .max-h-72{max-height:18rem}co2-calculator .max-w-16{max-width:4rem}co2-calculator .max-w-none{max-width:none}co2-calculator .max-w-xs{max-width:20rem}co2-calculator .max-w-sm{max-width:24rem}co2-calculator .max-w-md{max-width:28rem}co2-calculator .max-w-lg{max-width:32rem}co2-calculator .max-w-min{max-width:-webkit-min-content;max-width:min-content}co2-calculator .max-w-max{max-width:-webkit-max-content;max-width:max-content}co2-calculator .max-w-screen-sm{max-width:640px}co2-calculator .max-w-screen-md{max-width:768px}co2-calculator .max-w-screen-lg{max-width:1024px}co2-calculator .max-w-screen-xl{max-width:1280px}co2-calculator .min-h-screen{min-height:100vh}co2-calculator .min-w-max{min-width:-webkit-max-content;min-width:max-content}co2-calculator .opacity-0{opacity:0}co2-calculator .opacity-50{opacity:.5}co2-calculator .opacity-80{opacity:.8}co2-calculator .opacity-90{opacity:.9}co2-calculator .overflow-hidden{overflow:hidden}co2-calculator .overflow-x-hidden{overflow-x:hidden}co2-calculator .overflow-x-scroll{overflow-x:scroll}co2-calculator .p-2{padding:.5rem}co2-calculator .p-3{padding:.75rem}co2-calculator .p-4{padding:1rem}co2-calculator .p-5{padding:1.25rem}co2-calculator .p-6{padding:1.5rem}co2-calculator .p-12{padding:3rem}co2-calculator .py-1{padding-top:.25rem;padding-bottom:.25rem}co2-calculator .py-2{padding-top:.5rem;padding-bottom:.5rem}co2-calculator .px-2{padding-left:.5rem;padding-right:.5rem}co2-calculator .py-3{padding-top:.75rem;padding-bottom:.75rem}co2-calculator .px-3{padding-left:.75rem;padding-right:.75rem}co2-calculator .py-4{padding-top:1rem;padding-bottom:1rem}co2-calculator .px-4{padding-left:1rem;padding-right:1rem}co2-calculator .py-5{padding-top:1.25rem;padding-bottom:1.25rem}co2-calculator .px-5{padding-left:1.25rem;padding-right:1.25rem}co2-calculator .py-6{padding-top:1.5rem;padding-bottom:1.5rem}co2-calculator .px-6{padding-left:1.5rem;padding-right:1.5rem}co2-calculator .px-7{padding-left:1.75rem;padding-right:1.75rem}co2-calculator .py-8{padding-top:2rem;padding-bottom:2rem}co2-calculator .px-8{padding-left:2rem;padding-right:2rem}co2-calculator .py-10{padding-top:2.5rem;padding-bottom:2.5rem}co2-calculator .py-12{padding-top:3rem;padding-bottom:3rem}co2-calculator .py-14{padding-top:3.5rem;padding-bottom:3.5rem}co2-calculator .pb-0{padding-bottom:0}co2-calculator .pt-2{padding-top:.5rem}co2-calculator .pb-2{padding-bottom:.5rem}co2-calculator .pt-3{padding-top:.75rem}co2-calculator .pr-3{padding-right:.75rem}co2-calculator .pb-3{padding-bottom:.75rem}co2-calculator .pl-3{padding-left:.75rem}co2-calculator .pb-4{padding-bottom:1rem}co2-calculator .pl-4{padding-left:1rem}co2-calculator .pt-5{padding-top:1.25rem}co2-calculator .pt-6{padding-top:1.5rem}co2-calculator .pt-7{padding-top:1.75rem}co2-calculator .pt-8{padding-top:2rem}co2-calculator .pb-10{padding-bottom:2.5rem}co2-calculator .pt-12{padding-top:3rem}co2-calculator .pt-32{padding-top:8rem}co2-calculator .static{position:static}co2-calculator .fixed{position:fixed}co2-calculator .absolute{position:absolute}co2-calculator .relative{position:relative}co2-calculator .top-0{top:0}co2-calculator .right-0{right:0}co2-calculator .bottom-0{bottom:0}co2-calculator .left-0{left:0}co2-calculator .top-2{top:.5rem}co2-calculator .right-2{right:.5rem}co2-calculator .left-2{left:.5rem}co2-calculator .top-4{top:1rem}co2-calculator .right-4{right:1rem}co2-calculator .bottom-4{bottom:1rem}co2-calculator .left-4{left:1rem}co2-calculator .right-6{right:1.5rem}co2-calculator .top-8{top:2rem}co2-calculator .left-8{left:2rem}co2-calculator .top-12{top:3rem}co2-calculator .left-12{left:3rem}co2-calculator .left-14{left:3.5rem}co2-calculator .top-16{top:4rem}co2-calculator .right-16{right:4rem}co2-calculator .top-20{top:5rem}co2-calculator .right-20{right:5rem}co2-calculator .top-24{top:6rem}co2-calculator .top-28{top:7rem}co2-calculator .top-32{top:8rem}co2-calculator .right-32{right:8rem}co2-calculator .top-36{top:9rem}co2-calculator .top-40{top:10rem}co2-calculator .left-40{left:10rem}co2-calculator .right-48{right:12rem}co2-calculator .right-52{right:13rem}co2-calculator .top-56{top:14rem}co2-calculator .top-60{top:15rem}co2-calculator .right-60{right:15rem}co2-calculator .left-60{left:15rem}co2-calculator .top-64{top:16rem}co2-calculator .right-72{right:18rem}co2-calculator .-right-2{right:-.5rem}co2-calculator .-bottom-2{bottom:-.5rem}co2-calculator .-top-4{top:-1rem}co2-calculator .-right-4{right:-1rem}co2-calculator .-bottom-4{bottom:-1rem}co2-calculator .-top-5{top:-1.25rem}co2-calculator .-top-6{top:-1.5rem}co2-calculator .-right-6{right:-1.5rem}co2-calculator .-bottom-7{bottom:-1.75rem}co2-calculator .-top-8{top:-2rem}co2-calculator .-left-8{left:-2rem}co2-calculator .-top-10{top:-2.5rem}co2-calculator .-left-10{left:-2.5rem}co2-calculator .-top-11{top:-2.75rem}co2-calculator .-top-12{top:-3rem}co2-calculator .-right-14{right:-3.5rem}co2-calculator .-top-16{top:-4rem}co2-calculator .-right-16{right:-4rem}co2-calculator .-bottom-16{bottom:-4rem}co2-calculator .-left-16{left:-4rem}co2-calculator .-top-20{top:-5rem}co2-calculator .-top-24{top:-6rem}co2-calculator .-right-24{right:-6rem}co2-calculator .-bottom-24{bottom:-6rem}co2-calculator .-left-24{left:-6rem}co2-calculator .-left-44{left:-11rem}co2-calculator .-top-48{top:-12rem}co2-calculator .-left-48{left:-12rem}co2-calculator .-left-52{left:-13rem}co2-calculator .-right-56{right:-14rem}co2-calculator .-left-64{left:-16rem}co2-calculator .-left-80{left:-20rem}co2-calculator .-left-96{left:-24rem}co2-calculator .top-1\/2{top:50%}co2-calculator .right-1\/2{right:50%}co2-calculator .left-1\/2{left:50%}co2-calculator .left-1\/3{left:33.333333%}co2-calculator .left-1\/4{left:25%}co2-calculator .left-full{left:100%}co2-calculator *{--tw-shadow:0 0 transparent}co2-calculator .shadow-sm{--tw-shadow:0 1px 2px 0 rgba(0, 0, 0, 0.05)}co2-calculator .shadow,co2-calculator .shadow-sm{box-shadow:var(--tw-ring-offset-shadow,0 0 transparent),var(--tw-ring-shadow,0 0 transparent),var(--tw-shadow)}co2-calculator .shadow{--tw-shadow:0 1px 3px 0 rgba(0, 0, 0, 0.1),0 1px 2px 0 rgba(0, 0, 0, 0.06)}co2-calculator .shadow-md{--tw-shadow:0 4px 6px -1px rgba(0, 0, 0, 0.1),0 2px 4px -1px rgba(0, 0, 0, 0.06)}co2-calculator .shadow-lg,co2-calculator .shadow-md{box-shadow:var(--tw-ring-offset-shadow,0 0 transparent),var(--tw-ring-shadow,0 0 transparent),var(--tw-shadow)}co2-calculator .shadow-lg{--tw-shadow:0 10px 15px -3px rgba(0, 0, 0, 0.1),0 4px 6px -2px rgba(0, 0, 0, 0.05)}co2-calculator .shadow-xl{--tw-shadow:0 20px 25px -5px rgba(0, 0, 0, 0.1),0 10px 10px -5px rgba(0, 0, 0, 0.04)}co2-calculator .shadow-2xl,co2-calculator .shadow-xl{box-shadow:var(--tw-ring-offset-shadow,0 0 transparent),var(--tw-ring-shadow,0 0 transparent),var(--tw-shadow)}co2-calculator .shadow-2xl{--tw-shadow:0 25px 50px -12px rgba(0, 0, 0, 0.25)}co2-calculator *{--tw-ring-inset:var(--tw-empty);--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgba(67, 158, 233, 0.5);--tw-ring-offset-shadow:0 0 transparent;--tw-ring-shadow:0 0 transparent}co2-calculator .stroke-current{stroke:currentColor}co2-calculator .stroke-2{stroke-width:2}co2-calculator .text-left{text-align:left}co2-calculator .text-center{text-align:center}co2-calculator .text-right{text-align:right}co2-calculator .text-black{--tw-text-opacity:1;color:rgba(0,0,0,var(--tw-text-opacity))}co2-calculator .text-white{--tw-text-opacity:1;color:rgba(255,255,255,var(--tw-text-opacity))}co2-calculator .text-danger{color:#ae1616}co2-calculator .text-green-50{--tw-text-opacity:1;color:rgba(252,255,245,var(--tw-text-opacity))}co2-calculator .text-green-100{--tw-text-opacity:1;color:rgba(216,243,214,var(--tw-text-opacity))}co2-calculator .text-green-200{--tw-text-opacity:1;color:rgba(194,241,178,var(--tw-text-opacity))}co2-calculator .text-green-300{--tw-text-opacity:1;color:rgba(176,232,133,var(--tw-text-opacity))}co2-calculator .text-green-500{--tw-text-opacity:1;color:rgba(90,181,75,var(--tw-text-opacity))}co2-calculator .text-green-600{--tw-text-opacity:1;color:rgba(55,147,70,var(--tw-text-opacity))}co2-calculator .text-green-700{--tw-text-opacity:1;color:rgba(39,108,54,var(--tw-text-opacity))}co2-calculator .text-green-800{--tw-text-opacity:1;color:rgba(40,94,45,var(--tw-text-opacity))}co2-calculator .text-green-900{--tw-text-opacity:1;color:rgba(34,78,41,var(--tw-text-opacity))}co2-calculator .text-yellow-100{--tw-text-opacity:1;color:rgba(255,250,201,var(--tw-text-opacity))}co2-calculator .text-yellow-500{--tw-text-opacity:1;color:rgba(235,162,42,var(--tw-text-opacity))}co2-calculator .text-yellow-600{--tw-text-opacity:1;color:rgba(206,125,34,var(--tw-text-opacity))}co2-calculator .text-yellow-700{--tw-text-opacity:1;color:rgba(170,91,29,var(--tw-text-opacity))}co2-calculator .text-yellow-800{--tw-text-opacity:1;color:rgba(137,72,28,var(--tw-text-opacity))}co2-calculator .text-yellow-900{--tw-text-opacity:1;color:rgba(113,60,27,var(--tw-text-opacity))}co2-calculator .text-blue-100{--tw-text-opacity:1;color:rgba(226,237,243,var(--tw-text-opacity))}co2-calculator .text-blue-200{--tw-text-opacity:1;color:rgba(214,239,250,var(--tw-text-opacity))}co2-calculator .text-blue-500{--tw-text-opacity:1;color:rgba(67,158,233,var(--tw-text-opacity))}co2-calculator .text-blue-600{--tw-text-opacity:1;color:rgba(49,130,206,var(--tw-text-opacity))}co2-calculator .text-blue-700{--tw-text-opacity:1;color:rgba(43,108,176,var(--tw-text-opacity))}co2-calculator .text-blue-800{--tw-text-opacity:1;color:rgba(44,82,130,var(--tw-text-opacity))}co2-calculator .text-blue-900{--tw-text-opacity:1;color:rgba(42,67,101,var(--tw-text-opacity))}co2-calculator .text-opacity-30{--tw-text-opacity:0.3}co2-calculator .text-opacity-40{--tw-text-opacity:0.4}co2-calculator .text-opacity-50{--tw-text-opacity:0.5}co2-calculator .text-opacity-60{--tw-text-opacity:0.6}co2-calculator .text-opacity-70{--tw-text-opacity:0.7}co2-calculator .text-opacity-100{--tw-text-opacity:1}co2-calculator .truncate{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}co2-calculator .uppercase{text-transform:uppercase}co2-calculator .lowercase{text-transform:lowercase}co2-calculator .capitalize{text-transform:capitalize}co2-calculator .underline{text-decoration:underline}co2-calculator .tracking-widest{letter-spacing:.1em}co2-calculator .select-none{-webkit-user-select:none;user-select:none}co2-calculator .whitespace-pre{white-space:pre}co2-calculator .break-all{word-break:break-all}co2-calculator .w-0{width:0}co2-calculator .w-1{width:.25rem}co2-calculator .w-2{width:.5rem}co2-calculator .w-3{width:.75rem}co2-calculator .w-4{width:1rem}co2-calculator .w-5{width:1.25rem}co2-calculator .w-6{width:1.5rem}co2-calculator .w-7{width:1.75rem}co2-calculator .w-8{width:2rem}co2-calculator .w-9{width:2.25rem}co2-calculator .w-10{width:2.5rem}co2-calculator .w-12{width:3rem}co2-calculator .w-14{width:3.5rem}co2-calculator .w-16{width:4rem}co2-calculator .w-20{width:5rem}co2-calculator .w-24{width:6rem}co2-calculator .w-28{width:7rem}co2-calculator .w-32{width:8rem}co2-calculator .w-40{width:10rem}co2-calculator .w-44{width:11rem}co2-calculator .w-48{width:12rem}co2-calculator .w-52{width:13rem}co2-calculator .w-64{width:16rem}co2-calculator .w-72{width:18rem}co2-calculator .w-176{width:44rem}co2-calculator .w-auto{width:auto}co2-calculator .w-1\/2{width:50%}co2-calculator .w-2\/3{width:66.666667%}co2-calculator .w-3\/4{width:75%}co2-calculator .w-10\/12{width:83.333333%}co2-calculator .w-11\/12{width:91.666667%}co2-calculator .w-full{width:100%}co2-calculator .w-max{width:-webkit-max-content;width:max-content}co2-calculator .w-23\/24{width:95.833333%}co2-calculator .z-0{z-index:0}co2-calculator .z-10{z-index:10}co2-calculator .z-20{z-index:20}co2-calculator .-z-1{z-index:-1}co2-calculator .gap-2{gap:.5rem}co2-calculator .gap-3{gap:.75rem}co2-calculator .gap-4{gap:1rem}co2-calculator .gap-6{gap:1.5rem}co2-calculator .gap-8{gap:2rem}co2-calculator .gap-12{gap:3rem}co2-calculator .grid-flow-col{grid-auto-flow:column}co2-calculator .grid-cols-1{grid-template-columns:repeat(1,minmax(0,1fr))}co2-calculator .grid-cols-2{grid-template-columns:repeat(2,minmax(0,1fr))}co2-calculator .grid-cols-3{grid-template-columns:repeat(3,minmax(0,1fr))}co2-calculator .grid-cols-6{grid-template-columns:repeat(6,minmax(0,1fr))}co2-calculator .grid-cols-12{grid-template-columns:repeat(12,minmax(0,1fr))}co2-calculator .auto-cols-fr{grid-auto-columns:minmax(0,1fr)}co2-calculator .col-span-2{grid-column:span 2/span 2}co2-calculator .col-span-5{grid-column:span 5/span 5}co2-calculator .col-span-10{grid-column:span 10/span 10}co2-calculator .row-span-2{grid-row:span 2/span 2}co2-calculator .transform{--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;transform:translateX(var(--tw-translate-x)) translateY(var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}co2-calculator .-scale-x-100{--tw-scale-x:-1}co2-calculator .rotate-2{--tw-rotate:2deg}co2-calculator .rotate-90{--tw-rotate:90deg}co2-calculator .rotate-180{--tw-rotate:180deg}co2-calculator .-rotate-90{--tw-rotate:-90deg}co2-calculator .-rotate-12{--tw-rotate:-12deg}co2-calculator .-rotate-2{--tw-rotate:-2deg}co2-calculator .transition-all{transition-property:all;transition-timing-function:cubic-bezier(.4,0,.2,1);transition-duration:.15s}co2-calculator .transition-colors{transition-property:background-color,border-color,color,fill,stroke;transition-timing-function:cubic-bezier(.4,0,.2,1);transition-duration:.15s}co2-calculator .ease-in-out{transition-timing-function:cubic-bezier(.4,0,.2,1)}co2-calculator .duration-500{transition-duration:.5s}co2-calculator .duration-700{transition-duration:.7s}@keyframes spin{to{transform:rotate(1turn)}}@keyframes ping{75%,to{transform:scale(2);opacity:0}}@keyframes pulse{50%{opacity:.5}}@keyframes bounce{0%,to{transform:translateY(-25%);animation-timing-function:cubic-bezier(.8,0,1,1)}50%{transform:none;animation-timing-function:cubic-bezier(0,0,.2,1)}}co2-calculator .animate-bounce{animation:bounce 1s infinite}co2-calculator .scroll-snap-x{scroll-snap-type:x mandatory;scroll-padding-left:1rem}co2-calculator .scroll-align-start{scroll-snap-align:start}co2-calculator .svg{display:block!important}co2-calculator .translateY50{transform:translateY(-50%)}co2-calculator .translateX50{transform:translateX(-50%)}co2-calculator .full-width{width:100vw;position:relative;left:50%;right:50%;margin-left:-50vw;margin-right:-50vw}co2-calculator .btn-yellow{--tw-bg-opacity:1;background-color:rgba(255,227,122,var(--tw-bg-opacity));border-radius:9999px;display:flex;align-items:center;justify-content:center;font-weight:700;margin-left:auto;margin-right:auto;padding:.75rem 2rem;--tw-text-opacity:1;color:rgba(137,72,28,var(--tw-text-opacity))}@media (min-width:1024px){co2-calculator .btn-yellow{font-size:1.125rem;line-height:1.75rem}}co2-calculator .btn-green{--tw-bg-opacity:1;background-color:rgba(90,181,75,var(--tw-bg-opacity));--tw-border-opacity:1;border-color:rgba(55,147,70,var(--tw-border-opacity));border-radius:.375rem;border-width:2px;display:block;align-items:center;font-weight:600;padding:.5rem 2rem;--tw-text-opacity:1;color:rgba(255,255,255,var(--tw-text-opacity))}co2-calculator *{outline:0!important;-webkit-tap-highlight-color:transparent}@media (min-width:640px){co2-calculator .sm\:rounded-3xl{border-radius:1.5rem}co2-calculator .sm\:min-w-max{min-width:-webkit-max-content;min-width:max-content}co2-calculator .sm\:py-6{padding-top:1.5rem;padding-bottom:1.5rem}}@media (min-width:768px){co2-calculator .md\:justify-center{justify-content:center}co2-calculator .md\:-mt-40{margin-top:-10rem}co2-calculator .md\:max-w-max{max-width:-webkit-max-content;max-width:max-content}}@media (min-width:1024px){co2-calculator .lg\:container{width:100%;margin-right:auto;margin-left:auto}co2-calculator .lg\:rounded-lg{border-radius:.5rem}co2-calculator .lg\:rounded-3xl{border-radius:1.5rem}co2-calculator .lg\:block{display:block}co2-calculator .lg\:inline-block{display:inline-block}co2-calculator .lg\:flex{display:flex}co2-calculator .lg\:grid{display:grid}co2-calculator .lg\:hidden{display:none}co2-calculator .lg\:flex-row{flex-direction:row}co2-calculator .lg\:flex-col{flex-direction:column}co2-calculator .lg\:self-start{align-self:flex-start}co2-calculator .lg\:self-end{align-self:flex-end}co2-calculator .lg\:self-center{align-self:center}co2-calculator .lg\:justify-start{justify-content:flex-start}co2-calculator .lg\:justify-end{justify-content:flex-end}co2-calculator .lg\:justify-center{justify-content:center}co2-calculator .lg\:justify-between{justify-content:space-between}co2-calculator .lg\:justify-self-end{justify-self:end}co2-calculator .lg\:flex-shrink{flex-shrink:1}co2-calculator .lg\:order-1{order:1}co2-calculator .lg\:order-2{order:2}co2-calculator .lg\:order-4{order:4}co2-calculator .lg\:font-semibold{font-weight:600}co2-calculator .lg\:font-bold{font-weight:700}co2-calculator .lg\:font-extrabold{font-weight:800}co2-calculator .lg\:h-8{height:2rem}co2-calculator .lg\:h-10{height:2.5rem}co2-calculator .lg\:h-12{height:3rem}co2-calculator .lg\:h-16{height:4rem}co2-calculator .lg\:h-80{height:20rem}co2-calculator .lg\:h-92{height:23rem}co2-calculator .lg\:h-auto{height:auto}co2-calculator .lg\:text-base{font-size:1rem;line-height:1.5rem}co2-calculator .lg\:text-lg{font-size:1.125rem;line-height:1.75rem}co2-calculator .lg\:text-xl{font-size:1.25rem;line-height:1.75rem}co2-calculator .lg\:text-2xl{font-size:1.5rem;line-height:2rem}co2-calculator .lg\:text-3xl{font-size:1.875rem;line-height:2.25rem}co2-calculator .lg\:text-4xl{font-size:2.25rem;line-height:2.5rem}co2-calculator .lg\:text-5xl{font-size:3rem;line-height:1}co2-calculator .lg\:mx-0{margin-left:0;margin-right:0}co2-calculator .lg\:mx-auto{margin-left:auto;margin-right:auto}co2-calculator .lg\:-mx-10{margin-left:-2.5rem;margin-right:-2.5rem}co2-calculator .lg\:-mx-12{margin-left:-3rem;margin-right:-3rem}co2-calculator .lg\:-mx-16{margin-left:-4rem;margin-right:-4rem}co2-calculator .lg\:-mx-24{margin-left:-6rem;margin-right:-6rem}co2-calculator .lg\:-mx-32{margin-left:-8rem;margin-right:-8rem}co2-calculator .lg\:-mx-36{margin-left:-9rem;margin-right:-9rem}co2-calculator .lg\:mt-0{margin-top:0}co2-calculator .lg\:mr-0{margin-right:0}co2-calculator .lg\:mb-0{margin-bottom:0}co2-calculator .lg\:ml-0{margin-left:0}co2-calculator .lg\:mt-2{margin-top:.5rem}co2-calculator .lg\:mt-3{margin-top:.75rem}co2-calculator .lg\:mb-3{margin-bottom:.75rem}co2-calculator .lg\:mt-4{margin-top:1rem}co2-calculator .lg\:ml-4{margin-left:1rem}co2-calculator .lg\:mt-5{margin-top:1.25rem}co2-calculator .lg\:mr-5{margin-right:1.25rem}co2-calculator .lg\:mb-5{margin-bottom:1.25rem}co2-calculator .lg\:mt-6{margin-top:1.5rem}co2-calculator .lg\:mt-8{margin-top:2rem}co2-calculator .lg\:mt-10{margin-top:2.5rem}co2-calculator .lg\:mb-10{margin-bottom:2.5rem}co2-calculator .lg\:mt-12{margin-top:3rem}co2-calculator .lg\:mt-16{margin-top:4rem}co2-calculator .lg\:mb-16{margin-bottom:4rem}co2-calculator .lg\:mt-20{margin-top:5rem}co2-calculator .lg\:mt-24{margin-top:6rem}co2-calculator .lg\:mt-28{margin-top:7rem}co2-calculator .lg\:mt-32{margin-top:8rem}co2-calculator .lg\:mb-32{margin-bottom:8rem}co2-calculator .lg\:mt-52{margin-top:13rem}co2-calculator .lg\:mt-72{margin-top:18rem}co2-calculator .lg\:ml-auto{margin-left:auto}co2-calculator .lg\:-mt-12{margin-top:-3rem}co2-calculator .lg\:max-h-full{max-height:100%}co2-calculator .lg\:max-w-xs{max-width:20rem}co2-calculator .lg\:max-w-sm{max-width:24rem}co2-calculator .lg\:max-w-lg{max-width:32rem}co2-calculator .lg\:max-w-full{max-width:100%}co2-calculator .lg\:max-w-screen-sm{max-width:640px}co2-calculator .lg\:opacity-80{opacity:.8}co2-calculator .lg\:overflow-x-auto{overflow-x:auto}co2-calculator .lg\:p-6{padding:1.5rem}co2-calculator .lg\:p-7{padding:1.75rem}co2-calculator .lg\:p-8{padding:2rem}co2-calculator .lg\:p-10{padding:2.5rem}co2-calculator .lg\:px-0{padding-left:0;padding-right:0}co2-calculator .lg\:py-6{padding-top:1.5rem;padding-bottom:1.5rem}co2-calculator .lg\:px-6{padding-left:1.5rem;padding-right:1.5rem}co2-calculator .lg\:px-8{padding-left:2rem;padding-right:2rem}co2-calculator .lg\:py-10{padding-top:2.5rem;padding-bottom:2.5rem}co2-calculator .lg\:px-12{padding-left:3rem;padding-right:3rem}co2-calculator .lg\:py-16{padding-top:4rem;padding-bottom:4rem}co2-calculator .lg\:px-16{padding-left:4rem;padding-right:4rem}co2-calculator .lg\:px-20{padding-left:5rem;padding-right:5rem}co2-calculator .lg\:pt-0{padding-top:0}co2-calculator .lg\:pb-5{padding-bottom:1.25rem}co2-calculator .lg\:pl-6{padding-left:1.5rem}co2-calculator .lg\:pl-10{padding-left:2.5rem}co2-calculator .lg\:pt-12{padding-top:3rem}co2-calculator .lg\:pb-12{padding-bottom:3rem}co2-calculator .lg\:pt-16{padding-top:4rem}co2-calculator .lg\:pl-16{padding-left:4rem}co2-calculator .lg\:top-0{top:0}co2-calculator .lg\:right-0{right:0}co2-calculator .lg\:left-0{left:0}co2-calculator .lg\:left-16{left:4rem}co2-calculator .lg\:top-24{top:6rem}co2-calculator .lg\:top-36{top:9rem}co2-calculator .lg\:right-56{right:14rem}co2-calculator .lg\:left-56{left:14rem}co2-calculator .lg\:left-60{left:15rem}co2-calculator .lg\:right-72{right:18rem}co2-calculator .lg\:left-72{left:18rem}co2-calculator .lg\:top-92{top:23rem}co2-calculator .lg\:left-96{left:24rem}co2-calculator .lg\:-top-2{top:-.5rem}co2-calculator .lg\:-top-3{top:-.75rem}co2-calculator .lg\:-top-4{top:-1rem}co2-calculator .lg\:-top-8{top:-2rem}co2-calculator .lg\:-right-8{right:-2rem}co2-calculator .lg\:-bottom-12{bottom:-3rem}co2-calculator .lg\:-top-16{top:-4rem}co2-calculator .lg\:-left-20{left:-5rem}co2-calculator .lg\:-top-24{top:-6rem}co2-calculator .lg\:-left-24{left:-6rem}co2-calculator .lg\:-left-32{left:-8rem}co2-calculator .lg\:-left-40{left:-10rem}co2-calculator .lg\:-right-64{right:-16rem}co2-calculator .lg\:-right-96{right:-24rem}co2-calculator .lg\:-left-96{left:-24rem}co2-calculator .lg\:right-1\/3{right:33.333333%}co2-calculator .lg\:left-1\/3{left:33.333333%}co2-calculator .lg\:shadow-lg{--tw-shadow:0 10px 15px -3px rgba(0, 0, 0, 0.1),0 4px 6px -2px rgba(0, 0, 0, 0.05);box-shadow:var(--tw-ring-offset-shadow,0 0 transparent),var(--tw-ring-shadow,0 0 transparent),var(--tw-shadow)}co2-calculator .lg\:text-center{text-align:center}co2-calculator .lg\:whitespace-pre-wrap{white-space:pre-wrap}co2-calculator .lg\:w-8{width:2rem}co2-calculator .lg\:w-10{width:2.5rem}co2-calculator .lg\:w-12{width:3rem}co2-calculator .lg\:w-16{width:4rem}co2-calculator .lg\:w-20{width:5rem}co2-calculator .lg\:w-24{width:6rem}co2-calculator .lg\:w-28{width:7rem}co2-calculator .lg\:w-32{width:8rem}co2-calculator .lg\:w-40{width:10rem}co2-calculator .lg\:w-60{width:15rem}co2-calculator .lg\:w-64{width:16rem}co2-calculator .lg\:w-80{width:20rem}co2-calculator .lg\:w-96{width:24rem}co2-calculator .lg\:w-auto{width:auto}co2-calculator .lg\:w-1\/2{width:50%}co2-calculator .lg\:w-2\/3{width:66.666667%}co2-calculator .lg\:w-7\/12{width:58.333333%}co2-calculator .lg\:w-11\/12{width:91.666667%}co2-calculator .lg\:w-full{width:100%}co2-calculator .lg\:gap-2{gap:.5rem}co2-calculator .lg\:gap-4{gap:1rem}co2-calculator .lg\:gap-8{gap:2rem}co2-calculator .lg\:gap-12{gap:3rem}co2-calculator .lg\:gap-28{gap:7rem}co2-calculator .lg\:grid-cols-2{grid-template-columns:repeat(2,minmax(0,1fr))}co2-calculator .lg\:grid-cols-3{grid-template-columns:repeat(3,minmax(0,1fr))}co2-calculator .lg\:grid-cols-4{grid-template-columns:repeat(4,minmax(0,1fr))}co2-calculator .lg\:col-span-1{grid-column:span 1/span 1}co2-calculator .lg\:col-span-2{grid-column:span 2/span 2}co2-calculator .lg\:row-span-1{grid-row:span 1/span 1}co2-calculator .lg\:row-span-3{grid-row:span 3/span 3}co2-calculator .lg\:scale-x-100{--tw-scale-x:1}}@media (min-width:1024px) and (min-width:640px){co2-calculator .lg\:container{max-width:640px}}@media (min-width:1024px) and (min-width:768px){co2-calculator .lg\:container{max-width:768px}}@media (min-width:1024px) and (min-width:1024px){co2-calculator .lg\:container{max-width:1024px}}@media (min-width:1024px) and (min-width:1280px){co2-calculator .lg\:container{max-width:1280px}}@media (min-width:1024px) and (min-width:1595px){co2-calculator .lg\:container{max-width:1595px}}@media (min-width:1280px){co2-calculator .xl\:-mx-72{margin-left:-18rem;margin-right:-18rem}co2-calculator .xl\:p-24{padding:6rem}co2-calculator .xl\:right-64{right:16rem}co2-calculator .xl\:right-96{right:24rem}co2-calculator .xl\:w-44{width:11rem}co2-calculator .xl\:gap-12{gap:3rem}}@media (min-width:1595px){co2-calculator .\32xl\:h-5\/6{height:83.333333%}}
+co2-calculator .cdk-global-overlay-wrapper,
+co2-calculator .cdk-overlay-container {
+	pointer-events: none;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+}
+co2-calculator .cdk-overlay-container {
+	position: fixed;
+	z-index: 1000;
+}
+co2-calculator .cdk-overlay-container:empty {
+	display: none;
+}
+co2-calculator .cdk-global-overlay-wrapper,
+co2-calculator .cdk-overlay-pane {
+	display: flex;
+	position: absolute;
+	z-index: 1000;
+}
+co2-calculator .cdk-overlay-pane {
+	pointer-events: auto;
+	box-sizing: border-box;
+	max-width: 100%;
+	max-height: 100%;
+}
+co2-calculator .cdk-overlay-backdrop {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: 1000;
+	pointer-events: auto;
+	-webkit-tap-highlight-color: transparent;
+	transition: opacity 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+	opacity: 0;
+}
+co2-calculator .cdk-overlay-backdrop.cdk-overlay-backdrop-showing {
+	opacity: 1;
+}
+co2-calculator
+	.cdk-high-contrast-active
+	.cdk-overlay-backdrop.cdk-overlay-backdrop-showing {
+	opacity: 0.6;
+}
+co2-calculator .cdk-overlay-dark-backdrop {
+	background: rgba(0, 0, 0, 0.32);
+}
+co2-calculator .cdk-overlay-transparent-backdrop,
+co2-calculator .cdk-overlay-transparent-backdrop.cdk-overlay-backdrop-showing {
+	opacity: 0;
+}
+co2-calculator .cdk-overlay-connected-position-bounding-box {
+	position: absolute;
+	z-index: 1000;
+	display: flex;
+	flex-direction: column;
+	min-width: 1px;
+	min-height: 1px;
+}
+co2-calculator .cdk-global-scrollblock {
+	position: fixed;
+	width: 100%;
+	overflow-y: scroll;
+	/*! tailwindcss v2.0.4 | MIT License | https://tailwindcss.com */
+	/*! modern-normalize v1.0.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
+}
+co2-calculator :root {
+	-moz-tab-size: 4;
+	tab-size: 4;
+}
+co2-calculator {
+	line-height: 1.15;
+	-webkit-text-size-adjust: 100%;
+}
+co2-calculator {
+	margin: 0;
+	font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial,
+		sans-serif, Apple Color Emoji, Segoe UI Emoji;
+}
+co2-calculator hr {
+	height: 0;
+	color: inherit;
+}
+co2-calculator abbr[title] {
+	-webkit-text-decoration: underline dotted;
+	text-decoration: underline dotted;
+}
+co2-calculator b,
+co2-calculator strong {
+	font-weight: bolder;
+}
+co2-calculator code,
+co2-calculator kbd,
+co2-calculator pre,
+co2-calculator samp {
+	font-family: ui-monospace, SFMono-Regular, Consolas, Liberation Mono, Menlo,
+		monospace;
+	font-size: 1em;
+}
+co2-calculator small {
+	font-size: 80%;
+}
+co2-calculator sub,
+co2-calculator sup {
+	font-size: 75%;
+	line-height: 0;
+	position: relative;
+	vertical-align: initial;
+}
+co2-calculator sub {
+	bottom: -0.25em;
+}
+co2-calculator sup {
+	top: -0.5em;
+}
+co2-calculator table {
+	text-indent: 0;
+	border-color: inherit;
+}
+co2-calculator button,
+co2-calculator input,
+co2-calculator optgroup,
+co2-calculator select,
+co2-calculator textarea {
+	font-family: inherit;
+	font-size: 100%;
+	line-height: 1.15;
+	margin: 0;
+}
+co2-calculator button,
+co2-calculator select {
+	text-transform: none;
+}
+co2-calculator [type='button'],
+co2-calculator [type='reset'],
+co2-calculator [type='submit'],
+co2-calculator button {
+	-webkit-appearance: button;
+}
+co2-calculator legend {
+	padding: 0;
+}
+co2-calculator progress {
+	vertical-align: initial;
+}
+co2-calculator [type='search'] {
+	-webkit-appearance: textfield;
+	outline-offset: -2px;
+}
+co2-calculator summary {
+	display: list-item;
+}
+co2-calculator blockquote,
+co2-calculator dd,
+co2-calculator dl,
+co2-calculator figure,
+co2-calculator h1,
+co2-calculator h2,
+co2-calculator h3,
+co2-calculator h4,
+co2-calculator h5,
+co2-calculator h6,
+co2-calculator hr,
+co2-calculator p,
+co2-calculator pre {
+	margin: 0;
+}
+co2-calculator button {
+	background-color: initial;
+	background-image: none;
+}
+co2-calculator button:focus {
+	outline: 1px dotted;
+	outline: 5px auto -webkit-focus-ring-color;
+}
+co2-calculator fieldset,
+co2-calculator ol,
+co2-calculator ul {
+	margin: 0;
+	padding: 0;
+}
+co2-calculator ol,
+co2-calculator ul {
+	list-style: none;
+}
+co2-calculator html {
+	font-family: proxima-nova, sans-serif;
+	line-height: 1.5;
+}
+co2-calculator body {
+	font-family: inherit;
+	line-height: inherit;
+}
+co2-calculator *,
+co2-calculator :after,
+co2-calculator :before {
+	box-sizing: border-box;
+	border: 0 solid;
+}
+co2-calculator hr {
+	border-top-width: 1px;
+}
+co2-calculator img {
+	border-style: solid;
+}
+co2-calculator textarea {
+	resize: vertical;
+}
+co2-calculator input::placeholder,
+co2-calculator textarea::placeholder {
+	opacity: 1;
+	color: #a1a1aa;
+}
+co2-calculator button {
+	cursor: pointer;
+}
+co2-calculator table {
+	border-collapse: collapse;
+}
+co2-calculator h1,
+co2-calculator h2,
+co2-calculator h3,
+co2-calculator h4,
+co2-calculator h5,
+co2-calculator h6 {
+	font-size: inherit;
+	font-weight: inherit;
+}
+co2-calculator a {
+	color: inherit;
+	text-decoration: inherit;
+}
+co2-calculator button,
+co2-calculator input,
+co2-calculator optgroup,
+co2-calculator select,
+co2-calculator textarea {
+	padding: 0;
+	line-height: inherit;
+	color: inherit;
+}
+co2-calculator code,
+co2-calculator kbd,
+co2-calculator pre,
+co2-calculator samp {
+	font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+		Liberation Mono, Courier New, monospace;
+}
+co2-calculator audio,
+co2-calculator canvas,
+co2-calculator embed,
+co2-calculator iframe,
+co2-calculator img,
+co2-calculator object,
+co2-calculator svg,
+co2-calculator video {
+	display: block;
+	vertical-align: middle;
+}
+co2-calculator img,
+co2-calculator video {
+	max-width: 100%;
+	height: auto;
+}
+co2-calculator .container {
+	width: 100%;
+	margin-right: auto;
+	margin-left: auto;
+}
+@media (min-width: 640px) {
+	co2-calculator .container {
+		max-width: 640px;
+	}
+}
+@media (min-width: 768px) {
+	co2-calculator .container {
+		max-width: 768px;
+	}
+}
+@media (min-width: 1024px) {
+	co2-calculator .container {
+		max-width: 1024px;
+	}
+}
+@media (min-width: 1280px) {
+	co2-calculator .container {
+		max-width: 1280px;
+	}
+}
+@media (min-width: 1595px) {
+	co2-calculator .container {
+		max-width: 1595px;
+	}
+}
+co2-calculator .bg-black {
+	--tw-bg-opacity: 1;
+	background-color: rgba(0, 0, 0, var(--tw-bg-opacity));
+}
+co2-calculator .bg-white {
+	--tw-bg-opacity: 1;
+	background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
+}
+co2-calculator .bg-green-50 {
+	--tw-bg-opacity: 1;
+	background-color: rgba(252, 255, 245, var(--tw-bg-opacity));
+}
+co2-calculator .bg-green-75 {
+	--tw-bg-opacity: 1;
+	background-color: rgba(242, 252, 236, var(--tw-bg-opacity));
+}
+co2-calculator .bg-green-100 {
+	--tw-bg-opacity: 1;
+	background-color: rgba(216, 243, 214, var(--tw-bg-opacity));
+}
+co2-calculator .bg-green-200 {
+	--tw-bg-opacity: 1;
+	background-color: rgba(194, 241, 178, var(--tw-bg-opacity));
+}
+co2-calculator .bg-green-300 {
+	--tw-bg-opacity: 1;
+	background-color: rgba(176, 232, 133, var(--tw-bg-opacity));
+}
+co2-calculator .bg-green-400 {
+	--tw-bg-opacity: 1;
+	background-color: rgba(146, 213, 93, var(--tw-bg-opacity));
+}
+co2-calculator .bg-green-500 {
+	--tw-bg-opacity: 1;
+	background-color: rgba(90, 181, 75, var(--tw-bg-opacity));
+}
+co2-calculator .bg-green-600 {
+	--tw-bg-opacity: 1;
+	background-color: rgba(55, 147, 70, var(--tw-bg-opacity));
+}
+co2-calculator .bg-green-700 {
+	--tw-bg-opacity: 1;
+	background-color: rgba(39, 108, 54, var(--tw-bg-opacity));
+}
+co2-calculator .bg-green-800 {
+	--tw-bg-opacity: 1;
+	background-color: rgba(40, 94, 45, var(--tw-bg-opacity));
+}
+co2-calculator .bg-green-900 {
+	--tw-bg-opacity: 1;
+	background-color: rgba(34, 78, 41, var(--tw-bg-opacity));
+}
+co2-calculator .bg-green-shade {
+	background-color: rgba(34, 78, 41, 0.031372549);
+}
+co2-calculator .bg-yellow-100 {
+	--tw-bg-opacity: 1;
+	background-color: rgba(255, 250, 201, var(--tw-bg-opacity));
+}
+co2-calculator .bg-yellow-200 {
+	--tw-bg-opacity: 1;
+	background-color: rgba(255, 246, 169, var(--tw-bg-opacity));
+}
+co2-calculator .bg-yellow-300 {
+	--tw-bg-opacity: 1;
+	background-color: rgba(255, 227, 122, var(--tw-bg-opacity));
+}
+co2-calculator .bg-yellow-500 {
+	--tw-bg-opacity: 1;
+	background-color: rgba(235, 162, 42, var(--tw-bg-opacity));
+}
+co2-calculator .bg-yellow-600 {
+	--tw-bg-opacity: 1;
+	background-color: rgba(206, 125, 34, var(--tw-bg-opacity));
+}
+co2-calculator .bg-yellow-800 {
+	--tw-bg-opacity: 1;
+	background-color: rgba(137, 72, 28, var(--tw-bg-opacity));
+}
+co2-calculator .bg-yellow-900 {
+	--tw-bg-opacity: 1;
+	background-color: rgba(113, 60, 27, var(--tw-bg-opacity));
+}
+co2-calculator .bg-blue-100 {
+	--tw-bg-opacity: 1;
+	background-color: rgba(226, 237, 243, var(--tw-bg-opacity));
+}
+co2-calculator .bg-blue-200 {
+	--tw-bg-opacity: 1;
+	background-color: rgba(214, 239, 250, var(--tw-bg-opacity));
+}
+co2-calculator .bg-blue-400 {
+	--tw-bg-opacity: 1;
+	background-color: rgba(103, 203, 247, var(--tw-bg-opacity));
+}
+co2-calculator .bg-blue-500 {
+	--tw-bg-opacity: 1;
+	background-color: rgba(67, 158, 233, var(--tw-bg-opacity));
+}
+co2-calculator .bg-blue-600 {
+	--tw-bg-opacity: 1;
+	background-color: rgba(49, 130, 206, var(--tw-bg-opacity));
+}
+co2-calculator .bg-blue-700 {
+	--tw-bg-opacity: 1;
+	background-color: rgba(43, 108, 176, var(--tw-bg-opacity));
+}
+co2-calculator .hover\:bg-green-shade:hover {
+	background-color: rgba(34, 78, 41, 0.031372549);
+}
+co2-calculator .bg-gradient-to-r {
+	background-image: linear-gradient(90deg, var(--tw-gradient-stops));
+}
+co2-calculator .bg-gradient-to-b {
+	background-image: linear-gradient(180deg, var(--tw-gradient-stops));
+}
+co2-calculator .bg-gradient-to-l {
+	background-image: linear-gradient(270deg, var(--tw-gradient-stops));
+}
+co2-calculator .from-green-300 {
+	--tw-gradient-from: #b0e885;
+	--tw-gradient-stops: var(--tw-gradient-from),
+		var(--tw-gradient-to, rgba(176, 232, 133, 0));
+}
+co2-calculator .from-green-400 {
+	--tw-gradient-from: #92d55d;
+	--tw-gradient-stops: var(--tw-gradient-from),
+		var(--tw-gradient-to, rgba(146, 213, 93, 0));
+}
+co2-calculator .from-green-500 {
+	--tw-gradient-from: #5ab54b;
+	--tw-gradient-stops: var(--tw-gradient-from),
+		var(--tw-gradient-to, rgba(90, 181, 75, 0));
+}
+co2-calculator .from-green-600 {
+	--tw-gradient-from: #379346;
+	--tw-gradient-stops: var(--tw-gradient-from),
+		var(--tw-gradient-to, rgba(55, 147, 70, 0));
+}
+co2-calculator .from-yellow-500 {
+	--tw-gradient-from: #eba22a;
+	--tw-gradient-stops: var(--tw-gradient-from),
+		var(--tw-gradient-to, rgba(235, 162, 42, 0));
+}
+co2-calculator .from-blue-600 {
+	--tw-gradient-from: #3182ce;
+	--tw-gradient-stops: var(--tw-gradient-from),
+		var(--tw-gradient-to, rgba(49, 130, 206, 0));
+}
+co2-calculator .via-green-600 {
+	--tw-gradient-stops: var(--tw-gradient-from), #379346,
+		var(--tw-gradient-to, rgba(55, 147, 70, 0));
+}
+co2-calculator .to-green-300 {
+	--tw-gradient-to: #b0e885;
+}
+co2-calculator .to-green-400 {
+	--tw-gradient-to: #92d55d;
+}
+co2-calculator .to-green-500 {
+	--tw-gradient-to: #5ab54b;
+}
+co2-calculator .to-green-700 {
+	--tw-gradient-to: #276c36;
+}
+co2-calculator .to-green-900 {
+	--tw-gradient-to: #224e29;
+}
+co2-calculator .to-yellow-800 {
+	--tw-gradient-to: #89481c;
+}
+co2-calculator .to-blue-400 {
+	--tw-gradient-to: #67cbf7;
+}
+co2-calculator .bg-opacity-5 {
+	--tw-bg-opacity: 0.05;
+}
+co2-calculator .bg-opacity-10 {
+	--tw-bg-opacity: 0.1;
+}
+co2-calculator .bg-opacity-20 {
+	--tw-bg-opacity: 0.2;
+}
+co2-calculator .bg-opacity-60 {
+	--tw-bg-opacity: 0.6;
+}
+co2-calculator .bg-opacity-90 {
+	--tw-bg-opacity: 0.9;
+}
+co2-calculator .bg-opacity-100 {
+	--tw-bg-opacity: 1;
+}
+co2-calculator .border-black {
+	--tw-border-opacity: 1;
+	border-color: rgba(0, 0, 0, var(--tw-border-opacity));
+}
+co2-calculator .border-white {
+	--tw-border-opacity: 1;
+	border-color: rgba(255, 255, 255, var(--tw-border-opacity));
+}
+co2-calculator .border-green-50 {
+	--tw-border-opacity: 1;
+	border-color: rgba(252, 255, 245, var(--tw-border-opacity));
+}
+co2-calculator .border-green-100 {
+	--tw-border-opacity: 1;
+	border-color: rgba(216, 243, 214, var(--tw-border-opacity));
+}
+co2-calculator .border-green-300 {
+	--tw-border-opacity: 1;
+	border-color: rgba(176, 232, 133, var(--tw-border-opacity));
+}
+co2-calculator .border-green-600 {
+	--tw-border-opacity: 1;
+	border-color: rgba(55, 147, 70, var(--tw-border-opacity));
+}
+co2-calculator .border-green-700 {
+	--tw-border-opacity: 1;
+	border-color: rgba(39, 108, 54, var(--tw-border-opacity));
+}
+co2-calculator .border-green-800 {
+	--tw-border-opacity: 1;
+	border-color: rgba(40, 94, 45, var(--tw-border-opacity));
+}
+co2-calculator .border-green-900 {
+	--tw-border-opacity: 1;
+	border-color: rgba(34, 78, 41, var(--tw-border-opacity));
+}
+co2-calculator .border-yellow-300 {
+	--tw-border-opacity: 1;
+	border-color: rgba(255, 227, 122, var(--tw-border-opacity));
+}
+co2-calculator .border-yellow-600 {
+	--tw-border-opacity: 1;
+	border-color: rgba(206, 125, 34, var(--tw-border-opacity));
+}
+co2-calculator .border-yellow-700 {
+	--tw-border-opacity: 1;
+	border-color: rgba(170, 91, 29, var(--tw-border-opacity));
+}
+co2-calculator .border-yellow-800 {
+	--tw-border-opacity: 1;
+	border-color: rgba(137, 72, 28, var(--tw-border-opacity));
+}
+co2-calculator .border-yellow-900 {
+	--tw-border-opacity: 1;
+	border-color: rgba(113, 60, 27, var(--tw-border-opacity));
+}
+co2-calculator .border-blue-300 {
+	--tw-border-opacity: 1;
+	border-color: rgba(147, 218, 240, var(--tw-border-opacity));
+}
+co2-calculator .border-blue-600 {
+	--tw-border-opacity: 1;
+	border-color: rgba(49, 130, 206, var(--tw-border-opacity));
+}
+co2-calculator .border-blue-800 {
+	--tw-border-opacity: 1;
+	border-color: rgba(44, 82, 130, var(--tw-border-opacity));
+}
+co2-calculator .border-opacity-0 {
+	--tw-border-opacity: 0;
+}
+co2-calculator .border-opacity-5 {
+	--tw-border-opacity: 0.05;
+}
+co2-calculator .border-opacity-10 {
+	--tw-border-opacity: 0.1;
+}
+co2-calculator .border-opacity-20 {
+	--tw-border-opacity: 0.2;
+}
+co2-calculator .border-opacity-30 {
+	--tw-border-opacity: 0.3;
+}
+co2-calculator .rounded-md {
+	border-radius: 0.375rem;
+}
+co2-calculator .rounded-lg {
+	border-radius: 0.5rem;
+}
+co2-calculator .rounded-xl {
+	border-radius: 0.75rem;
+}
+co2-calculator .rounded-2xl {
+	border-radius: 1rem;
+}
+co2-calculator .rounded-3xl {
+	border-radius: 1.5rem;
+}
+co2-calculator .rounded-full {
+	border-radius: 9999px;
+}
+co2-calculator .rounded-4xl {
+	border-radius: 5rem;
+}
+co2-calculator .rounded-r-full {
+	border-top-right-radius: 9999px;
+	border-bottom-right-radius: 9999px;
+}
+co2-calculator .rounded-l-full {
+	border-top-left-radius: 9999px;
+	border-bottom-left-radius: 9999px;
+}
+co2-calculator .rounded-tl-lg {
+	border-top-left-radius: 0.5rem;
+}
+co2-calculator .rounded-tr-lg {
+	border-top-right-radius: 0.5rem;
+}
+co2-calculator .border-0 {
+	border-width: 0;
+}
+co2-calculator .border-2 {
+	border-width: 2px;
+}
+co2-calculator .border-4 {
+	border-width: 4px;
+}
+co2-calculator .border {
+	border-width: 1px;
+}
+co2-calculator .border-b-2 {
+	border-bottom-width: 2px;
+}
+co2-calculator .border-l-4 {
+	border-left-width: 4px;
+}
+co2-calculator .border-t {
+	border-top-width: 1px;
+}
+co2-calculator .box-border {
+	box-sizing: border-box;
+}
+co2-calculator .cursor-pointer {
+	cursor: pointer;
+}
+co2-calculator .block {
+	display: block;
+}
+co2-calculator .inline-block {
+	display: inline-block;
+}
+co2-calculator .flex {
+	display: flex;
+}
+co2-calculator .table {
+	display: table;
+}
+co2-calculator .grid {
+	display: grid;
+}
+co2-calculator .hidden {
+	display: none;
+}
+co2-calculator .flex-row-reverse {
+	flex-direction: row-reverse;
+}
+co2-calculator .flex-col {
+	flex-direction: column;
+}
+co2-calculator .items-start {
+	align-items: flex-start;
+}
+co2-calculator .items-end {
+	align-items: flex-end;
+}
+co2-calculator .items-center {
+	align-items: center;
+}
+co2-calculator .content-center {
+	align-content: center;
+}
+co2-calculator .content-start {
+	align-content: flex-start;
+}
+co2-calculator .self-start {
+	align-self: flex-start;
+}
+co2-calculator .self-end {
+	align-self: flex-end;
+}
+co2-calculator .self-center {
+	align-self: center;
+}
+co2-calculator .justify-start {
+	justify-content: flex-start;
+}
+co2-calculator .justify-end {
+	justify-content: flex-end;
+}
+co2-calculator .justify-center {
+	justify-content: center;
+}
+co2-calculator .justify-between {
+	justify-content: space-between;
+}
+co2-calculator .justify-evenly {
+	justify-content: space-evenly;
+}
+co2-calculator .justify-self-start {
+	justify-self: start;
+}
+co2-calculator .justify-self-end {
+	justify-self: end;
+}
+co2-calculator .justify-self-center {
+	justify-self: center;
+}
+co2-calculator .flex-1 {
+	flex: 1 1 0%;
+}
+co2-calculator .flex-shrink-0 {
+	flex-shrink: 0;
+}
+co2-calculator .order-1 {
+	order: 1;
+}
+co2-calculator .order-2 {
+	order: 2;
+}
+co2-calculator .order-3 {
+	order: 3;
+}
+co2-calculator .order-4 {
+	order: 4;
+}
+co2-calculator .order-5 {
+	order: 5;
+}
+co2-calculator .order-6 {
+	order: 6;
+}
+co2-calculator .order-7 {
+	order: 7;
+}
+co2-calculator .font-normal {
+	font-weight: 400;
+}
+co2-calculator .font-medium {
+	font-weight: 500;
+}
+co2-calculator .font-semibold {
+	font-weight: 600;
+}
+co2-calculator .font-bold {
+	font-weight: 700;
+}
+co2-calculator .font-extrabold {
+	font-weight: 800;
+}
+co2-calculator .font-black {
+	font-weight: 900;
+}
+co2-calculator .h-0 {
+	height: 0;
+}
+co2-calculator .h-1 {
+	height: 0.25rem;
+}
+co2-calculator .h-2 {
+	height: 0.5rem;
+}
+co2-calculator .h-3 {
+	height: 0.75rem;
+}
+co2-calculator .h-4 {
+	height: 1rem;
+}
+co2-calculator .h-5 {
+	height: 1.25rem;
+}
+co2-calculator .h-6 {
+	height: 1.5rem;
+}
+co2-calculator .h-7 {
+	height: 1.75rem;
+}
+co2-calculator .h-8 {
+	height: 2rem;
+}
+co2-calculator .h-10 {
+	height: 2.5rem;
+}
+co2-calculator .h-12 {
+	height: 3rem;
+}
+co2-calculator .h-14 {
+	height: 3.5rem;
+}
+co2-calculator .h-16 {
+	height: 4rem;
+}
+co2-calculator .h-20 {
+	height: 5rem;
+}
+co2-calculator .h-24 {
+	height: 6rem;
+}
+co2-calculator .h-28 {
+	height: 7rem;
+}
+co2-calculator .h-32 {
+	height: 8rem;
+}
+co2-calculator .h-52 {
+	height: 13rem;
+}
+co2-calculator .h-60 {
+	height: 15rem;
+}
+co2-calculator .h-64 {
+	height: 16rem;
+}
+co2-calculator .h-72 {
+	height: 18rem;
+}
+co2-calculator .h-80 {
+	height: 20rem;
+}
+co2-calculator .h-96 {
+	height: 24rem;
+}
+co2-calculator .h-104 {
+	height: 26rem;
+}
+co2-calculator .h-112 {
+	height: 28rem;
+}
+co2-calculator .h-auto {
+	height: auto;
+}
+co2-calculator .h-0\.5 {
+	height: 0.125rem;
+}
+co2-calculator .h-1\/2 {
+	height: 50%;
+}
+co2-calculator .h-full {
+	height: 100%;
+}
+co2-calculator .h-screen {
+	height: 100vh;
+}
+co2-calculator .text-xs {
+	font-size: 0.75rem;
+	line-height: 1rem;
+}
+co2-calculator .text-sm {
+	font-size: 0.875rem;
+	line-height: 1.25rem;
+}
+co2-calculator .text-base {
+	font-size: 1rem;
+	line-height: 1.5rem;
+}
+co2-calculator .text-lg {
+	font-size: 1.125rem;
+}
+co2-calculator .text-lg,
+co2-calculator .text-xl {
+	line-height: 1.75rem;
+}
+co2-calculator .text-xl {
+	font-size: 1.25rem;
+}
+co2-calculator .text-2xl {
+	font-size: 1.5rem;
+	line-height: 2rem;
+}
+co2-calculator .text-3xl {
+	font-size: 1.875rem;
+	line-height: 2.25rem;
+}
+co2-calculator .text-4xl {
+	font-size: 2.25rem;
+	line-height: 2.5rem;
+}
+co2-calculator .text-5xl {
+	font-size: 3rem;
+	line-height: 1;
+}
+co2-calculator .text-7xl {
+	font-size: 4.5rem;
+	line-height: 1;
+}
+co2-calculator .m-8 {
+	margin: 2rem;
+}
+co2-calculator .m-auto {
+	margin: auto;
+}
+co2-calculator .mx-1 {
+	margin-left: 0.25rem;
+	margin-right: 0.25rem;
+}
+co2-calculator .mx-2 {
+	margin-left: 0.5rem;
+	margin-right: 0.5rem;
+}
+co2-calculator .mx-3 {
+	margin-left: 0.75rem;
+	margin-right: 0.75rem;
+}
+co2-calculator .my-8 {
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+}
+co2-calculator .mx-8 {
+	margin-left: 2rem;
+	margin-right: 2rem;
+}
+co2-calculator .my-10 {
+	margin-top: 2.5rem;
+	margin-bottom: 2.5rem;
+}
+co2-calculator .mx-auto {
+	margin-left: auto;
+	margin-right: auto;
+}
+co2-calculator .-mx-2 {
+	margin-left: -0.5rem;
+	margin-right: -0.5rem;
+}
+co2-calculator .-mx-3 {
+	margin-left: -0.75rem;
+	margin-right: -0.75rem;
+}
+co2-calculator .-mx-4 {
+	margin-left: -1rem;
+	margin-right: -1rem;
+}
+co2-calculator .-mx-5 {
+	margin-left: -1.25rem;
+	margin-right: -1.25rem;
+}
+co2-calculator .-mx-6 {
+	margin-left: -1.5rem;
+	margin-right: -1.5rem;
+}
+co2-calculator .-mx-7 {
+	margin-left: -1.75rem;
+	margin-right: -1.75rem;
+}
+co2-calculator .-mx-28 {
+	margin-left: -7rem;
+	margin-right: -7rem;
+}
+co2-calculator .-mx-96 {
+	margin-left: -24rem;
+	margin-right: -24rem;
+}
+co2-calculator .mb-0 {
+	margin-bottom: 0;
+}
+co2-calculator .mt-1 {
+	margin-top: 0.25rem;
+}
+co2-calculator .mr-1 {
+	margin-right: 0.25rem;
+}
+co2-calculator .mb-1 {
+	margin-bottom: 0.25rem;
+}
+co2-calculator .ml-1 {
+	margin-left: 0.25rem;
+}
+co2-calculator .mt-2 {
+	margin-top: 0.5rem;
+}
+co2-calculator .mr-2 {
+	margin-right: 0.5rem;
+}
+co2-calculator .mb-2 {
+	margin-bottom: 0.5rem;
+}
+co2-calculator .ml-2 {
+	margin-left: 0.5rem;
+}
+co2-calculator .mt-3 {
+	margin-top: 0.75rem;
+}
+co2-calculator .mr-3 {
+	margin-right: 0.75rem;
+}
+co2-calculator .mb-3 {
+	margin-bottom: 0.75rem;
+}
+co2-calculator .ml-3 {
+	margin-left: 0.75rem;
+}
+co2-calculator .mt-4 {
+	margin-top: 1rem;
+}
+co2-calculator .mr-4 {
+	margin-right: 1rem;
+}
+co2-calculator .mb-4 {
+	margin-bottom: 1rem;
+}
+co2-calculator .ml-4 {
+	margin-left: 1rem;
+}
+co2-calculator .mt-5 {
+	margin-top: 1.25rem;
+}
+co2-calculator .mr-5 {
+	margin-right: 1.25rem;
+}
+co2-calculator .mb-5 {
+	margin-bottom: 1.25rem;
+}
+co2-calculator .mt-6 {
+	margin-top: 1.5rem;
+}
+co2-calculator .mb-6 {
+	margin-bottom: 1.5rem;
+}
+co2-calculator .mt-8 {
+	margin-top: 2rem;
+}
+co2-calculator .mb-8 {
+	margin-bottom: 2rem;
+}
+co2-calculator .mt-10 {
+	margin-top: 2.5rem;
+}
+co2-calculator .mb-10 {
+	margin-bottom: 2.5rem;
+}
+co2-calculator .mt-12 {
+	margin-top: 3rem;
+}
+co2-calculator .mb-12 {
+	margin-bottom: 3rem;
+}
+co2-calculator .mt-14 {
+	margin-top: 3.5rem;
+}
+co2-calculator .mt-16 {
+	margin-top: 4rem;
+}
+co2-calculator .mb-16 {
+	margin-bottom: 4rem;
+}
+co2-calculator .mt-20 {
+	margin-top: 5rem;
+}
+co2-calculator .mb-20 {
+	margin-bottom: 5rem;
+}
+co2-calculator .mt-24 {
+	margin-top: 6rem;
+}
+co2-calculator .mb-24 {
+	margin-bottom: 6rem;
+}
+co2-calculator .mt-28 {
+	margin-top: 7rem;
+}
+co2-calculator .mr-28 {
+	margin-right: 7rem;
+}
+co2-calculator .ml-28 {
+	margin-left: 7rem;
+}
+co2-calculator .mt-32 {
+	margin-top: 8rem;
+}
+co2-calculator .mb-32 {
+	margin-bottom: 8rem;
+}
+co2-calculator .mb-36 {
+	margin-bottom: 9rem;
+}
+co2-calculator .mt-40 {
+	margin-top: 10rem;
+}
+co2-calculator .mt-48 {
+	margin-top: 12rem;
+}
+co2-calculator .mb-56 {
+	margin-bottom: 14rem;
+}
+co2-calculator .mt-64 {
+	margin-top: 16rem;
+}
+co2-calculator .mt-72 {
+	margin-top: 18rem;
+}
+co2-calculator .mt-80 {
+	margin-top: 20rem;
+}
+co2-calculator .mt-96 {
+	margin-top: 24rem;
+}
+co2-calculator .ml-auto {
+	margin-left: auto;
+}
+co2-calculator .mb-0\.5 {
+	margin-bottom: 0.125rem;
+}
+co2-calculator .-mt-2 {
+	margin-top: -0.5rem;
+}
+co2-calculator .-mt-10 {
+	margin-top: -2.5rem;
+}
+co2-calculator .-mt-12 {
+	margin-top: -3rem;
+}
+co2-calculator .-ml-12 {
+	margin-left: -3rem;
+}
+co2-calculator .-mt-16 {
+	margin-top: -4rem;
+}
+co2-calculator .-mt-24 {
+	margin-top: -6rem;
+}
+co2-calculator .-mt-28 {
+	margin-top: -7rem;
+}
+co2-calculator .-ml-80 {
+	margin-left: -20rem;
+}
+co2-calculator .max-h-0 {
+	max-height: 0;
+}
+co2-calculator .max-h-44 {
+	max-height: 11rem;
+}
+co2-calculator .max-h-72 {
+	max-height: 18rem;
+}
+co2-calculator .max-h-full {
+	max-height: 100%;
+}
+co2-calculator .max-w-none {
+	max-width: none;
+}
+co2-calculator .max-w-xs {
+	max-width: 20rem;
+}
+co2-calculator .max-w-sm {
+	max-width: 24rem;
+}
+co2-calculator .max-w-md {
+	max-width: 28rem;
+}
+co2-calculator .max-w-lg {
+	max-width: 32rem;
+}
+co2-calculator .max-w-xl {
+	max-width: 36rem;
+}
+co2-calculator .max-w-min {
+	max-width: -webkit-min-content;
+	max-width: min-content;
+}
+co2-calculator .max-w-max {
+	max-width: -webkit-max-content;
+	max-width: max-content;
+}
+co2-calculator .max-w-screen-sm {
+	max-width: 640px;
+}
+co2-calculator .max-w-screen-md {
+	max-width: 768px;
+}
+co2-calculator .max-w-screen-lg {
+	max-width: 1024px;
+}
+co2-calculator .max-w-screen-xl {
+	max-width: 1280px;
+}
+co2-calculator .min-h-screen {
+	min-height: 100vh;
+}
+co2-calculator .min-w-max {
+	min-width: -webkit-max-content;
+	min-width: max-content;
+}
+co2-calculator .opacity-0 {
+	opacity: 0;
+}
+co2-calculator .opacity-10 {
+	opacity: 0.1;
+}
+co2-calculator .opacity-30 {
+	opacity: 0.3;
+}
+co2-calculator .opacity-40 {
+	opacity: 0.4;
+}
+co2-calculator .opacity-50 {
+	opacity: 0.5;
+}
+co2-calculator .opacity-80 {
+	opacity: 0.8;
+}
+co2-calculator .opacity-90 {
+	opacity: 0.9;
+}
+co2-calculator .opacity-100 {
+	opacity: 1;
+}
+co2-calculator .overflow-auto {
+	overflow: auto;
+}
+co2-calculator .overflow-hidden {
+	overflow: hidden;
+}
+co2-calculator .overflow-x-hidden {
+	overflow-x: hidden;
+}
+co2-calculator .overflow-x-scroll {
+	overflow-x: scroll;
+}
+co2-calculator .p-2 {
+	padding: 0.5rem;
+}
+co2-calculator .p-3 {
+	padding: 0.75rem;
+}
+co2-calculator .p-4 {
+	padding: 1rem;
+}
+co2-calculator .p-5 {
+	padding: 1.25rem;
+}
+co2-calculator .p-6 {
+	padding: 1.5rem;
+}
+co2-calculator .p-12 {
+	padding: 3rem;
+}
+co2-calculator .py-1 {
+	padding-top: 0.25rem;
+	padding-bottom: 0.25rem;
+}
+co2-calculator .py-2 {
+	padding-top: 0.5rem;
+	padding-bottom: 0.5rem;
+}
+co2-calculator .px-2 {
+	padding-left: 0.5rem;
+	padding-right: 0.5rem;
+}
+co2-calculator .py-3 {
+	padding-top: 0.75rem;
+	padding-bottom: 0.75rem;
+}
+co2-calculator .px-3 {
+	padding-left: 0.75rem;
+	padding-right: 0.75rem;
+}
+co2-calculator .py-4 {
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+}
+co2-calculator .px-4 {
+	padding-left: 1rem;
+	padding-right: 1rem;
+}
+co2-calculator .py-5 {
+	padding-top: 1.25rem;
+	padding-bottom: 1.25rem;
+}
+co2-calculator .px-5 {
+	padding-left: 1.25rem;
+	padding-right: 1.25rem;
+}
+co2-calculator .py-6 {
+	padding-top: 1.5rem;
+	padding-bottom: 1.5rem;
+}
+co2-calculator .px-6 {
+	padding-left: 1.5rem;
+	padding-right: 1.5rem;
+}
+co2-calculator .px-7 {
+	padding-left: 1.75rem;
+	padding-right: 1.75rem;
+}
+co2-calculator .py-8 {
+	padding-top: 2rem;
+	padding-bottom: 2rem;
+}
+co2-calculator .px-8 {
+	padding-left: 2rem;
+	padding-right: 2rem;
+}
+co2-calculator .py-10 {
+	padding-top: 2.5rem;
+	padding-bottom: 2.5rem;
+}
+co2-calculator .py-12 {
+	padding-top: 3rem;
+	padding-bottom: 3rem;
+}
+co2-calculator .py-14 {
+	padding-top: 3.5rem;
+	padding-bottom: 3.5rem;
+}
+co2-calculator .pb-0 {
+	padding-bottom: 0;
+}
+co2-calculator .pt-2 {
+	padding-top: 0.5rem;
+}
+co2-calculator .pb-2 {
+	padding-bottom: 0.5rem;
+}
+co2-calculator .pt-3 {
+	padding-top: 0.75rem;
+}
+co2-calculator .pr-3 {
+	padding-right: 0.75rem;
+}
+co2-calculator .pb-3 {
+	padding-bottom: 0.75rem;
+}
+co2-calculator .pl-3 {
+	padding-left: 0.75rem;
+}
+co2-calculator .pb-4 {
+	padding-bottom: 1rem;
+}
+co2-calculator .pl-4 {
+	padding-left: 1rem;
+}
+co2-calculator .pt-5 {
+	padding-top: 1.25rem;
+}
+co2-calculator .pt-6 {
+	padding-top: 1.5rem;
+}
+co2-calculator .pt-7 {
+	padding-top: 1.75rem;
+}
+co2-calculator .pt-8 {
+	padding-top: 2rem;
+}
+co2-calculator .pb-10 {
+	padding-bottom: 2.5rem;
+}
+co2-calculator .pt-12 {
+	padding-top: 3rem;
+}
+co2-calculator .pt-32 {
+	padding-top: 8rem;
+}
+co2-calculator .static {
+	position: static;
+}
+co2-calculator .fixed {
+	position: fixed;
+}
+co2-calculator .absolute {
+	position: absolute;
+}
+co2-calculator .relative {
+	position: relative;
+}
+co2-calculator .inset-0 {
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+}
+co2-calculator .top-0 {
+	top: 0;
+}
+co2-calculator .right-0 {
+	right: 0;
+}
+co2-calculator .bottom-0 {
+	bottom: 0;
+}
+co2-calculator .left-0 {
+	left: 0;
+}
+co2-calculator .top-2 {
+	top: 0.5rem;
+}
+co2-calculator .right-2 {
+	right: 0.5rem;
+}
+co2-calculator .left-2 {
+	left: 0.5rem;
+}
+co2-calculator .top-4 {
+	top: 1rem;
+}
+co2-calculator .right-4 {
+	right: 1rem;
+}
+co2-calculator .bottom-4 {
+	bottom: 1rem;
+}
+co2-calculator .left-4 {
+	left: 1rem;
+}
+co2-calculator .right-6 {
+	right: 1.5rem;
+}
+co2-calculator .top-8 {
+	top: 2rem;
+}
+co2-calculator .left-8 {
+	left: 2rem;
+}
+co2-calculator .top-12 {
+	top: 3rem;
+}
+co2-calculator .left-12 {
+	left: 3rem;
+}
+co2-calculator .top-14 {
+	top: 3.5rem;
+}
+co2-calculator .left-14 {
+	left: 3.5rem;
+}
+co2-calculator .top-16 {
+	top: 4rem;
+}
+co2-calculator .right-16 {
+	right: 4rem;
+}
+co2-calculator .top-20 {
+	top: 5rem;
+}
+co2-calculator .right-20 {
+	right: 5rem;
+}
+co2-calculator .top-24 {
+	top: 6rem;
+}
+co2-calculator .right-24 {
+	right: 6rem;
+}
+co2-calculator .top-28 {
+	top: 7rem;
+}
+co2-calculator .left-28 {
+	left: 7rem;
+}
+co2-calculator .right-32 {
+	right: 8rem;
+}
+co2-calculator .top-36 {
+	top: 9rem;
+}
+co2-calculator .top-40 {
+	top: 10rem;
+}
+co2-calculator .left-40 {
+	left: 10rem;
+}
+co2-calculator .right-48 {
+	right: 12rem;
+}
+co2-calculator .right-52 {
+	right: 13rem;
+}
+co2-calculator .top-56 {
+	top: 14rem;
+}
+co2-calculator .top-60 {
+	top: 15rem;
+}
+co2-calculator .right-60 {
+	right: 15rem;
+}
+co2-calculator .left-60 {
+	left: 15rem;
+}
+co2-calculator .top-64 {
+	top: 16rem;
+}
+co2-calculator .right-72 {
+	right: 18rem;
+}
+co2-calculator .-right-2 {
+	right: -0.5rem;
+}
+co2-calculator .-bottom-2 {
+	bottom: -0.5rem;
+}
+co2-calculator .-top-4 {
+	top: -1rem;
+}
+co2-calculator .-right-4 {
+	right: -1rem;
+}
+co2-calculator .-bottom-4 {
+	bottom: -1rem;
+}
+co2-calculator .-top-5 {
+	top: -1.25rem;
+}
+co2-calculator .-top-6 {
+	top: -1.5rem;
+}
+co2-calculator .-right-6 {
+	right: -1.5rem;
+}
+co2-calculator .-bottom-7 {
+	bottom: -1.75rem;
+}
+co2-calculator .-top-8 {
+	top: -2rem;
+}
+co2-calculator .-left-8 {
+	left: -2rem;
+}
+co2-calculator .-top-10 {
+	top: -2.5rem;
+}
+co2-calculator .-left-10 {
+	left: -2.5rem;
+}
+co2-calculator .-top-11 {
+	top: -2.75rem;
+}
+co2-calculator .-top-12 {
+	top: -3rem;
+}
+co2-calculator .-right-14 {
+	right: -3.5rem;
+}
+co2-calculator .-top-16 {
+	top: -4rem;
+}
+co2-calculator .-right-16 {
+	right: -4rem;
+}
+co2-calculator .-bottom-16 {
+	bottom: -4rem;
+}
+co2-calculator .-left-16 {
+	left: -4rem;
+}
+co2-calculator .-top-20 {
+	top: -5rem;
+}
+co2-calculator .-top-24 {
+	top: -6rem;
+}
+co2-calculator .-right-24 {
+	right: -6rem;
+}
+co2-calculator .-bottom-24 {
+	bottom: -6rem;
+}
+co2-calculator .-left-24 {
+	left: -6rem;
+}
+co2-calculator .-left-44 {
+	left: -11rem;
+}
+co2-calculator .-top-48 {
+	top: -12rem;
+}
+co2-calculator .-left-48 {
+	left: -12rem;
+}
+co2-calculator .-left-52 {
+	left: -13rem;
+}
+co2-calculator .-right-56 {
+	right: -14rem;
+}
+co2-calculator .-left-64 {
+	left: -16rem;
+}
+co2-calculator .-left-96 {
+	left: -24rem;
+}
+co2-calculator .top-1\/2 {
+	top: 50%;
+}
+co2-calculator .right-1\/2 {
+	right: 50%;
+}
+co2-calculator .left-1\/2 {
+	left: 50%;
+}
+co2-calculator .left-1\/3 {
+	left: 33.333333%;
+}
+co2-calculator .left-1\/4 {
+	left: 25%;
+}
+co2-calculator * {
+	--tw-shadow: 0 0 transparent;
+}
+co2-calculator .shadow-sm {
+	--tw-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+}
+co2-calculator .shadow,
+co2-calculator .shadow-sm {
+	box-shadow: var(--tw-ring-offset-shadow, 0 0 transparent),
+		var(--tw-ring-shadow, 0 0 transparent), var(--tw-shadow);
+}
+co2-calculator .shadow {
+	--tw-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+}
+co2-calculator .shadow-md {
+	--tw-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+		0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+co2-calculator .shadow-lg,
+co2-calculator .shadow-md {
+	box-shadow: var(--tw-ring-offset-shadow, 0 0 transparent),
+		var(--tw-ring-shadow, 0 0 transparent), var(--tw-shadow);
+}
+co2-calculator .shadow-lg {
+	--tw-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+		0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+co2-calculator .shadow-xl {
+	--tw-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+		0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+co2-calculator .shadow-2xl,
+co2-calculator .shadow-xl {
+	box-shadow: var(--tw-ring-offset-shadow, 0 0 transparent),
+		var(--tw-ring-shadow, 0 0 transparent), var(--tw-shadow);
+}
+co2-calculator .shadow-2xl {
+	--tw-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+}
+co2-calculator * {
+	--tw-ring-inset: var(--tw-empty);
+	--tw-ring-offset-width: 0px;
+	--tw-ring-offset-color: #fff;
+	--tw-ring-color: rgba(67, 158, 233, 0.5);
+	--tw-ring-offset-shadow: 0 0 transparent;
+	--tw-ring-shadow: 0 0 transparent;
+}
+co2-calculator .stroke-current {
+	stroke: currentColor;
+}
+co2-calculator .stroke-2 {
+	stroke-width: 2;
+}
+co2-calculator .text-left {
+	text-align: left;
+}
+co2-calculator .text-center {
+	text-align: center;
+}
+co2-calculator .text-right {
+	text-align: right;
+}
+co2-calculator .text-black {
+	--tw-text-opacity: 1;
+	color: rgba(0, 0, 0, var(--tw-text-opacity));
+}
+co2-calculator .text-white {
+	--tw-text-opacity: 1;
+	color: rgba(255, 255, 255, var(--tw-text-opacity));
+}
+co2-calculator .text-danger {
+	color: #ae1616;
+}
+co2-calculator .text-green-50 {
+	--tw-text-opacity: 1;
+	color: rgba(252, 255, 245, var(--tw-text-opacity));
+}
+co2-calculator .text-green-100 {
+	--tw-text-opacity: 1;
+	color: rgba(216, 243, 214, var(--tw-text-opacity));
+}
+co2-calculator .text-green-200 {
+	--tw-text-opacity: 1;
+	color: rgba(194, 241, 178, var(--tw-text-opacity));
+}
+co2-calculator .text-green-300 {
+	--tw-text-opacity: 1;
+	color: rgba(176, 232, 133, var(--tw-text-opacity));
+}
+co2-calculator .text-green-500 {
+	--tw-text-opacity: 1;
+	color: rgba(90, 181, 75, var(--tw-text-opacity));
+}
+co2-calculator .text-green-600 {
+	--tw-text-opacity: 1;
+	color: rgba(55, 147, 70, var(--tw-text-opacity));
+}
+co2-calculator .text-green-700 {
+	--tw-text-opacity: 1;
+	color: rgba(39, 108, 54, var(--tw-text-opacity));
+}
+co2-calculator .text-green-800 {
+	--tw-text-opacity: 1;
+	color: rgba(40, 94, 45, var(--tw-text-opacity));
+}
+co2-calculator .text-green-900 {
+	--tw-text-opacity: 1;
+	color: rgba(34, 78, 41, var(--tw-text-opacity));
+}
+co2-calculator .text-yellow-100 {
+	--tw-text-opacity: 1;
+	color: rgba(255, 250, 201, var(--tw-text-opacity));
+}
+co2-calculator .text-yellow-500 {
+	--tw-text-opacity: 1;
+	color: rgba(235, 162, 42, var(--tw-text-opacity));
+}
+co2-calculator .text-yellow-600 {
+	--tw-text-opacity: 1;
+	color: rgba(206, 125, 34, var(--tw-text-opacity));
+}
+co2-calculator .text-yellow-700 {
+	--tw-text-opacity: 1;
+	color: rgba(170, 91, 29, var(--tw-text-opacity));
+}
+co2-calculator .text-yellow-800 {
+	--tw-text-opacity: 1;
+	color: rgba(137, 72, 28, var(--tw-text-opacity));
+}
+co2-calculator .text-yellow-900 {
+	--tw-text-opacity: 1;
+	color: rgba(113, 60, 27, var(--tw-text-opacity));
+}
+co2-calculator .text-blue-100 {
+	--tw-text-opacity: 1;
+	color: rgba(226, 237, 243, var(--tw-text-opacity));
+}
+co2-calculator .text-blue-200 {
+	--tw-text-opacity: 1;
+	color: rgba(214, 239, 250, var(--tw-text-opacity));
+}
+co2-calculator .text-blue-500 {
+	--tw-text-opacity: 1;
+	color: rgba(67, 158, 233, var(--tw-text-opacity));
+}
+co2-calculator .text-blue-600 {
+	--tw-text-opacity: 1;
+	color: rgba(49, 130, 206, var(--tw-text-opacity));
+}
+co2-calculator .text-blue-700 {
+	--tw-text-opacity: 1;
+	color: rgba(43, 108, 176, var(--tw-text-opacity));
+}
+co2-calculator .text-blue-800 {
+	--tw-text-opacity: 1;
+	color: rgba(44, 82, 130, var(--tw-text-opacity));
+}
+co2-calculator .text-blue-900 {
+	--tw-text-opacity: 1;
+	color: rgba(42, 67, 101, var(--tw-text-opacity));
+}
+co2-calculator .text-opacity-20 {
+	--tw-text-opacity: 0.2;
+}
+co2-calculator .text-opacity-30 {
+	--tw-text-opacity: 0.3;
+}
+co2-calculator .text-opacity-40 {
+	--tw-text-opacity: 0.4;
+}
+co2-calculator .text-opacity-50 {
+	--tw-text-opacity: 0.5;
+}
+co2-calculator .text-opacity-60 {
+	--tw-text-opacity: 0.6;
+}
+co2-calculator .text-opacity-70 {
+	--tw-text-opacity: 0.7;
+}
+co2-calculator .text-opacity-100 {
+	--tw-text-opacity: 1;
+}
+co2-calculator .truncate {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+co2-calculator .uppercase {
+	text-transform: uppercase;
+}
+co2-calculator .lowercase {
+	text-transform: lowercase;
+}
+co2-calculator .capitalize {
+	text-transform: capitalize;
+}
+co2-calculator .hover\:underline:hover,
+co2-calculator .underline {
+	text-decoration: underline;
+}
+co2-calculator .tracking-widest {
+	letter-spacing: 0.1em;
+}
+co2-calculator .select-none {
+	-webkit-user-select: none;
+	user-select: none;
+}
+co2-calculator .whitespace-pre {
+	white-space: pre;
+}
+co2-calculator .w-0 {
+	width: 0;
+}
+co2-calculator .w-1 {
+	width: 0.25rem;
+}
+co2-calculator .w-2 {
+	width: 0.5rem;
+}
+co2-calculator .w-3 {
+	width: 0.75rem;
+}
+co2-calculator .w-4 {
+	width: 1rem;
+}
+co2-calculator .w-5 {
+	width: 1.25rem;
+}
+co2-calculator .w-6 {
+	width: 1.5rem;
+}
+co2-calculator .w-7 {
+	width: 1.75rem;
+}
+co2-calculator .w-8 {
+	width: 2rem;
+}
+co2-calculator .w-9 {
+	width: 2.25rem;
+}
+co2-calculator .w-10 {
+	width: 2.5rem;
+}
+co2-calculator .w-12 {
+	width: 3rem;
+}
+co2-calculator .w-14 {
+	width: 3.5rem;
+}
+co2-calculator .w-16 {
+	width: 4rem;
+}
+co2-calculator .w-20 {
+	width: 5rem;
+}
+co2-calculator .w-24 {
+	width: 6rem;
+}
+co2-calculator .w-28 {
+	width: 7rem;
+}
+co2-calculator .w-32 {
+	width: 8rem;
+}
+co2-calculator .w-40 {
+	width: 10rem;
+}
+co2-calculator .w-44 {
+	width: 11rem;
+}
+co2-calculator .w-48 {
+	width: 12rem;
+}
+co2-calculator .w-52 {
+	width: 13rem;
+}
+co2-calculator .w-56 {
+	width: 14rem;
+}
+co2-calculator .w-64 {
+	width: 16rem;
+}
+co2-calculator .w-72 {
+	width: 18rem;
+}
+co2-calculator .w-176 {
+	width: 44rem;
+}
+co2-calculator .w-auto {
+	width: auto;
+}
+co2-calculator .w-1\/2 {
+	width: 50%;
+}
+co2-calculator .w-2\/3 {
+	width: 66.666667%;
+}
+co2-calculator .w-3\/4 {
+	width: 75%;
+}
+co2-calculator .w-10\/12 {
+	width: 83.333333%;
+}
+co2-calculator .w-11\/12 {
+	width: 91.666667%;
+}
+co2-calculator .w-full {
+	width: 100%;
+}
+co2-calculator .w-screen {
+	width: 100vw;
+}
+co2-calculator .w-max {
+	width: -webkit-max-content;
+	width: max-content;
+}
+co2-calculator .w-23\/24 {
+	width: 95.833333%;
+}
+co2-calculator .z-0 {
+	z-index: 0;
+}
+co2-calculator .z-10 {
+	z-index: 10;
+}
+co2-calculator .z-20 {
+	z-index: 20;
+}
+co2-calculator .-z-1 {
+	z-index: -1;
+}
+co2-calculator .gap-2 {
+	gap: 0.5rem;
+}
+co2-calculator .gap-3 {
+	gap: 0.75rem;
+}
+co2-calculator .gap-4 {
+	gap: 1rem;
+}
+co2-calculator .gap-6 {
+	gap: 1.5rem;
+}
+co2-calculator .gap-8 {
+	gap: 2rem;
+}
+co2-calculator .gap-12 {
+	gap: 3rem;
+}
+co2-calculator .grid-flow-col {
+	grid-auto-flow: column;
+}
+co2-calculator .grid-cols-1 {
+	grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+co2-calculator .grid-cols-2 {
+	grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+co2-calculator .grid-cols-3 {
+	grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+co2-calculator .grid-cols-4 {
+	grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+co2-calculator .grid-cols-6 {
+	grid-template-columns: repeat(6, minmax(0, 1fr));
+}
+co2-calculator .grid-cols-12 {
+	grid-template-columns: repeat(12, minmax(0, 1fr));
+}
+co2-calculator .auto-cols-fr {
+	grid-auto-columns: minmax(0, 1fr);
+}
+co2-calculator .col-span-1 {
+	grid-column: span 1 / span 1;
+}
+co2-calculator .col-span-2 {
+	grid-column: span 2 / span 2;
+}
+co2-calculator .col-span-5 {
+	grid-column: span 5 / span 5;
+}
+co2-calculator .col-span-10 {
+	grid-column: span 10 / span 10;
+}
+co2-calculator .row-span-2 {
+	grid-row: span 2 / span 2;
+}
+co2-calculator .transform {
+	--tw-translate-x: 0;
+	--tw-translate-y: 0;
+	--tw-rotate: 0;
+	--tw-skew-x: 0;
+	--tw-skew-y: 0;
+	--tw-scale-x: 1;
+	--tw-scale-y: 1;
+	transform: translateX(var(--tw-translate-x)) translateY(var(--tw-translate-y))
+		rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y))
+		scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+co2-calculator .scale-150 {
+	--tw-scale-x: 1.5;
+	--tw-scale-y: 1.5;
+}
+co2-calculator .-scale-x-100 {
+	--tw-scale-x: -1;
+}
+co2-calculator .rotate-2 {
+	--tw-rotate: 2deg;
+}
+co2-calculator .rotate-90 {
+	--tw-rotate: 90deg;
+}
+co2-calculator .rotate-180 {
+	--tw-rotate: 180deg;
+}
+co2-calculator .-rotate-90 {
+	--tw-rotate: -90deg;
+}
+co2-calculator .-rotate-12 {
+	--tw-rotate: -12deg;
+}
+co2-calculator .-rotate-2 {
+	--tw-rotate: -2deg;
+}
+co2-calculator .transition-all {
+	transition-property: all;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+	transition-duration: 0.15s;
+}
+co2-calculator .transition-colors {
+	transition-property: background-color, border-color, color, fill, stroke;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+	transition-duration: 0.15s;
+}
+co2-calculator .ease-in-out {
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+co2-calculator .duration-500 {
+	transition-duration: 0.5s;
+}
+co2-calculator .duration-700 {
+	transition-duration: 0.7s;
+}
+@keyframes spin {
+	to {
+		transform: rotate(1turn);
+	}
+}
+@keyframes ping {
+	75%,
+	to {
+		transform: scale(2);
+		opacity: 0;
+	}
+}
+@keyframes pulse {
+	50% {
+		opacity: 0.5;
+	}
+}
+@keyframes bounce {
+	0%,
+	to {
+		transform: translateY(-25%);
+		animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+	}
+	50% {
+		transform: none;
+		animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+	}
+}
+co2-calculator .animate-bounce {
+	animation: bounce 1s infinite;
+}
+co2-calculator .scroll-snap-x {
+	scroll-snap-type: x mandatory;
+	scroll-padding-left: 1rem;
+}
+co2-calculator .scroll-align-start {
+	scroll-snap-align: start;
+}
+co2-calculator .svg {
+	display: block !important;
+}
+co2-calculator .translateY50 {
+	transform: translateY(-50%);
+}
+co2-calculator .translateX50 {
+	transform: translateX(-50%);
+}
+co2-calculator .full-width {
+	width: 100vw;
+	position: relative;
+	left: 50%;
+	right: 50%;
+	margin-left: -50vw;
+	margin-right: -50vw;
+}
+co2-calculator .btn-yellow {
+	--tw-bg-opacity: 1;
+	background-color: rgba(255, 227, 122, var(--tw-bg-opacity));
+	border-radius: 9999px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-weight: 700;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 0.75rem 2rem;
+	--tw-text-opacity: 1;
+	color: rgba(137, 72, 28, var(--tw-text-opacity));
+}
+@media (min-width: 1024px) {
+	co2-calculator .btn-yellow {
+		font-size: 1.125rem;
+		line-height: 1.75rem;
+	}
+}
+co2-calculator .btn-green {
+	background-color: rgba(90, 181, 75, var(--tw-bg-opacity));
+	--tw-border-opacity: 1;
+	border-color: rgba(55, 147, 70, var(--tw-border-opacity));
+	border-width: 2px;
+	color: rgba(255, 255, 255, var(--tw-text-opacity));
+}
+co2-calculator .btn-green,
+co2-calculator .btn-white {
+	--tw-bg-opacity: 1;
+	border-radius: 0.375rem;
+	display: block;
+	align-items: center;
+	font-weight: 600;
+	padding: 0.5rem 2rem;
+	--tw-text-opacity: 1;
+}
+co2-calculator .btn-white {
+	background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
+	color: rgba(34, 78, 41, var(--tw-text-opacity));
+}
+co2-calculator * {
+	outline: none !important;
+	-webkit-tap-highlight-color: transparent;
+}
+co2-calculator .cdk-overlay-backdrop {
+	z-index: 2000;
+}
+@media (min-width: 640px) {
+	co2-calculator .sm\:rounded-3xl {
+		border-radius: 1.5rem;
+	}
+	co2-calculator .sm\:min-w-max {
+		min-width: -webkit-max-content;
+		min-width: max-content;
+	}
+	co2-calculator .sm\:py-6 {
+		padding-top: 1.5rem;
+		padding-bottom: 1.5rem;
+	}
+}
+@media (min-width: 768px) {
+	co2-calculator .md\:justify-center {
+		justify-content: center;
+	}
+	co2-calculator .md\:-mt-40 {
+		margin-top: -10rem;
+	}
+	co2-calculator .md\:max-w-max {
+		max-width: -webkit-max-content;
+		max-width: max-content;
+	}
+}
+@media (min-width: 1024px) {
+	co2-calculator .lg\:container {
+		width: 100%;
+		margin-right: auto;
+		margin-left: auto;
+	}
+	co2-calculator .lg\:bg-green-shade {
+		background-color: rgba(34, 78, 41, 0.031372549);
+	}
+	co2-calculator .lg\:bg-opacity-0 {
+		--tw-bg-opacity: 0;
+	}
+	co2-calculator .lg\:rounded-lg {
+		border-radius: 0.5rem;
+	}
+	co2-calculator .lg\:rounded-3xl {
+		border-radius: 1.5rem;
+	}
+	co2-calculator .lg\:block {
+		display: block;
+	}
+	co2-calculator .lg\:flex {
+		display: flex;
+	}
+	co2-calculator .lg\:grid {
+		display: grid;
+	}
+	co2-calculator .lg\:hidden {
+		display: none;
+	}
+	co2-calculator .lg\:flex-row {
+		flex-direction: row;
+	}
+	co2-calculator .lg\:flex-col {
+		flex-direction: column;
+	}
+	co2-calculator .lg\:self-start {
+		align-self: flex-start;
+	}
+	co2-calculator .lg\:self-end {
+		align-self: flex-end;
+	}
+	co2-calculator .lg\:self-center {
+		align-self: center;
+	}
+	co2-calculator .lg\:justify-start {
+		justify-content: flex-start;
+	}
+	co2-calculator .lg\:justify-end {
+		justify-content: flex-end;
+	}
+	co2-calculator .lg\:justify-center {
+		justify-content: center;
+	}
+	co2-calculator .lg\:justify-between {
+		justify-content: space-between;
+	}
+	co2-calculator .lg\:justify-self-end {
+		justify-self: end;
+	}
+	co2-calculator .lg\:flex-shrink {
+		flex-shrink: 1;
+	}
+	co2-calculator .lg\:order-1 {
+		order: 1;
+	}
+	co2-calculator .lg\:order-2 {
+		order: 2;
+	}
+	co2-calculator .lg\:order-4 {
+		order: 4;
+	}
+	co2-calculator .lg\:font-semibold {
+		font-weight: 600;
+	}
+	co2-calculator .lg\:font-bold {
+		font-weight: 700;
+	}
+	co2-calculator .lg\:font-extrabold {
+		font-weight: 800;
+	}
+	co2-calculator .lg\:h-8 {
+		height: 2rem;
+	}
+	co2-calculator .lg\:h-10 {
+		height: 2.5rem;
+	}
+	co2-calculator .lg\:h-12 {
+		height: 3rem;
+	}
+	co2-calculator .lg\:h-16 {
+		height: 4rem;
+	}
+	co2-calculator .lg\:h-80 {
+		height: 20rem;
+	}
+	co2-calculator .lg\:h-92 {
+		height: 23rem;
+	}
+	co2-calculator .lg\:h-112 {
+		height: 28rem;
+	}
+	co2-calculator .lg\:h-auto {
+		height: auto;
+	}
+	co2-calculator .lg\:h-full {
+		height: 100%;
+	}
+	co2-calculator .lg\:text-base {
+		font-size: 1rem;
+		line-height: 1.5rem;
+	}
+	co2-calculator .lg\:text-lg {
+		font-size: 1.125rem;
+		line-height: 1.75rem;
+	}
+	co2-calculator .lg\:text-xl {
+		font-size: 1.25rem;
+		line-height: 1.75rem;
+	}
+	co2-calculator .lg\:text-2xl {
+		font-size: 1.5rem;
+		line-height: 2rem;
+	}
+	co2-calculator .lg\:text-3xl {
+		font-size: 1.875rem;
+		line-height: 2.25rem;
+	}
+	co2-calculator .lg\:text-4xl {
+		font-size: 2.25rem;
+		line-height: 2.5rem;
+	}
+	co2-calculator .lg\:text-5xl {
+		font-size: 3rem;
+		line-height: 1;
+	}
+	co2-calculator .lg\:mx-0 {
+		margin-left: 0;
+		margin-right: 0;
+	}
+	co2-calculator .lg\:my-5 {
+		margin-top: 1.25rem;
+		margin-bottom: 1.25rem;
+	}
+	co2-calculator .lg\:mx-auto {
+		margin-left: auto;
+		margin-right: auto;
+	}
+	co2-calculator .lg\:-mx-10 {
+		margin-left: -2.5rem;
+		margin-right: -2.5rem;
+	}
+	co2-calculator .lg\:-mx-12 {
+		margin-left: -3rem;
+		margin-right: -3rem;
+	}
+	co2-calculator .lg\:-mx-16 {
+		margin-left: -4rem;
+		margin-right: -4rem;
+	}
+	co2-calculator .lg\:-mx-24 {
+		margin-left: -6rem;
+		margin-right: -6rem;
+	}
+	co2-calculator .lg\:-mx-32 {
+		margin-left: -8rem;
+		margin-right: -8rem;
+	}
+	co2-calculator .lg\:-mx-36 {
+		margin-left: -9rem;
+		margin-right: -9rem;
+	}
+	co2-calculator .lg\:mt-0 {
+		margin-top: 0;
+	}
+	co2-calculator .lg\:mr-0 {
+		margin-right: 0;
+	}
+	co2-calculator .lg\:mb-0 {
+		margin-bottom: 0;
+	}
+	co2-calculator .lg\:ml-0 {
+		margin-left: 0;
+	}
+	co2-calculator .lg\:mt-2 {
+		margin-top: 0.5rem;
+	}
+	co2-calculator .lg\:mt-3 {
+		margin-top: 0.75rem;
+	}
+	co2-calculator .lg\:mb-3 {
+		margin-bottom: 0.75rem;
+	}
+	co2-calculator .lg\:mt-4 {
+		margin-top: 1rem;
+	}
+	co2-calculator .lg\:ml-4 {
+		margin-left: 1rem;
+	}
+	co2-calculator .lg\:mt-5 {
+		margin-top: 1.25rem;
+	}
+	co2-calculator .lg\:mr-5 {
+		margin-right: 1.25rem;
+	}
+	co2-calculator .lg\:mb-5 {
+		margin-bottom: 1.25rem;
+	}
+	co2-calculator .lg\:mt-6 {
+		margin-top: 1.5rem;
+	}
+	co2-calculator .lg\:mt-8 {
+		margin-top: 2rem;
+	}
+	co2-calculator .lg\:mt-10 {
+		margin-top: 2.5rem;
+	}
+	co2-calculator .lg\:mb-10 {
+		margin-bottom: 2.5rem;
+	}
+	co2-calculator .lg\:mt-12 {
+		margin-top: 3rem;
+	}
+	co2-calculator .lg\:mb-12 {
+		margin-bottom: 3rem;
+	}
+	co2-calculator .lg\:mt-16 {
+		margin-top: 4rem;
+	}
+	co2-calculator .lg\:mb-16 {
+		margin-bottom: 4rem;
+	}
+	co2-calculator .lg\:mt-20 {
+		margin-top: 5rem;
+	}
+	co2-calculator .lg\:mt-24 {
+		margin-top: 6rem;
+	}
+	co2-calculator .lg\:mt-28 {
+		margin-top: 7rem;
+	}
+	co2-calculator .lg\:mt-32 {
+		margin-top: 8rem;
+	}
+	co2-calculator .lg\:mb-32 {
+		margin-bottom: 8rem;
+	}
+	co2-calculator .lg\:mt-52 {
+		margin-top: 13rem;
+	}
+	co2-calculator .lg\:mt-72 {
+		margin-top: 18rem;
+	}
+	co2-calculator .lg\:ml-auto {
+		margin-left: auto;
+	}
+	co2-calculator .lg\:-mt-6 {
+		margin-top: -1.5rem;
+	}
+	co2-calculator .lg\:-mt-32 {
+		margin-top: -8rem;
+	}
+	co2-calculator .lg\:max-h-full {
+		max-height: 100%;
+	}
+	co2-calculator .lg\:max-w-xs {
+		max-width: 20rem;
+	}
+	co2-calculator .lg\:max-w-sm {
+		max-width: 24rem;
+	}
+	co2-calculator .lg\:max-w-lg {
+		max-width: 32rem;
+	}
+	co2-calculator .lg\:max-w-full {
+		max-width: 100%;
+	}
+	co2-calculator .lg\:max-w-screen-sm {
+		max-width: 640px;
+	}
+	co2-calculator .lg\:opacity-80 {
+		opacity: 0.8;
+	}
+	co2-calculator .lg\:overflow-x-auto {
+		overflow-x: auto;
+	}
+	co2-calculator .lg\:p-4 {
+		padding: 1rem;
+	}
+	co2-calculator .lg\:p-6 {
+		padding: 1.5rem;
+	}
+	co2-calculator .lg\:p-7 {
+		padding: 1.75rem;
+	}
+	co2-calculator .lg\:p-8 {
+		padding: 2rem;
+	}
+	co2-calculator .lg\:p-10 {
+		padding: 2.5rem;
+	}
+	co2-calculator .lg\:px-0 {
+		padding-left: 0;
+		padding-right: 0;
+	}
+	co2-calculator .lg\:py-4 {
+		padding-top: 1rem;
+		padding-bottom: 1rem;
+	}
+	co2-calculator .lg\:py-6 {
+		padding-top: 1.5rem;
+		padding-bottom: 1.5rem;
+	}
+	co2-calculator .lg\:px-6 {
+		padding-left: 1.5rem;
+		padding-right: 1.5rem;
+	}
+	co2-calculator .lg\:py-8 {
+		padding-top: 2rem;
+		padding-bottom: 2rem;
+	}
+	co2-calculator .lg\:px-8 {
+		padding-left: 2rem;
+		padding-right: 2rem;
+	}
+	co2-calculator .lg\:py-10 {
+		padding-top: 2.5rem;
+		padding-bottom: 2.5rem;
+	}
+	co2-calculator .lg\:px-12 {
+		padding-left: 3rem;
+		padding-right: 3rem;
+	}
+	co2-calculator .lg\:py-16 {
+		padding-top: 4rem;
+		padding-bottom: 4rem;
+	}
+	co2-calculator .lg\:px-16 {
+		padding-left: 4rem;
+		padding-right: 4rem;
+	}
+	co2-calculator .lg\:px-20 {
+		padding-left: 5rem;
+		padding-right: 5rem;
+	}
+	co2-calculator .lg\:pt-0 {
+		padding-top: 0;
+	}
+	co2-calculator .lg\:pb-5 {
+		padding-bottom: 1.25rem;
+	}
+	co2-calculator .lg\:pl-6 {
+		padding-left: 1.5rem;
+	}
+	co2-calculator .lg\:pl-10 {
+		padding-left: 2.5rem;
+	}
+	co2-calculator .lg\:pt-12 {
+		padding-top: 3rem;
+	}
+	co2-calculator .lg\:pb-12 {
+		padding-bottom: 3rem;
+	}
+	co2-calculator .lg\:pt-16 {
+		padding-top: 4rem;
+	}
+	co2-calculator .lg\:pl-16 {
+		padding-left: 4rem;
+	}
+	co2-calculator .lg\:pt-36 {
+		padding-top: 9rem;
+	}
+	co2-calculator .lg\:top-0 {
+		top: 0;
+	}
+	co2-calculator .lg\:right-0 {
+		right: 0;
+	}
+	co2-calculator .lg\:left-0 {
+		left: 0;
+	}
+	co2-calculator .lg\:left-16 {
+		left: 4rem;
+	}
+	co2-calculator .lg\:top-24 {
+		top: 6rem;
+	}
+	co2-calculator .lg\:top-36 {
+		top: 9rem;
+	}
+	co2-calculator .lg\:right-56 {
+		right: 14rem;
+	}
+	co2-calculator .lg\:left-56 {
+		left: 14rem;
+	}
+	co2-calculator .lg\:left-60 {
+		left: 15rem;
+	}
+	co2-calculator .lg\:right-72 {
+		right: 18rem;
+	}
+	co2-calculator .lg\:left-72 {
+		left: 18rem;
+	}
+	co2-calculator .lg\:left-96 {
+		left: 24rem;
+	}
+	co2-calculator .lg\:-top-2 {
+		top: -0.5rem;
+	}
+	co2-calculator .lg\:-top-3 {
+		top: -0.75rem;
+	}
+	co2-calculator .lg\:-top-4 {
+		top: -1rem;
+	}
+	co2-calculator .lg\:-top-8 {
+		top: -2rem;
+	}
+	co2-calculator .lg\:-bottom-12 {
+		bottom: -3rem;
+	}
+	co2-calculator .lg\:-top-16 {
+		top: -4rem;
+	}
+	co2-calculator .lg\:-left-20 {
+		left: -5rem;
+	}
+	co2-calculator .lg\:-top-24 {
+		top: -6rem;
+	}
+	co2-calculator .lg\:-right-24 {
+		right: -6rem;
+	}
+	co2-calculator .lg\:-left-24 {
+		left: -6rem;
+	}
+	co2-calculator .lg\:-left-32 {
+		left: -8rem;
+	}
+	co2-calculator .lg\:-left-40 {
+		left: -10rem;
+	}
+	co2-calculator .lg\:-right-64 {
+		right: -16rem;
+	}
+	co2-calculator .lg\:-right-96 {
+		right: -24rem;
+	}
+	co2-calculator .lg\:-left-96 {
+		left: -24rem;
+	}
+	co2-calculator .lg\:right-1\/3 {
+		right: 33.333333%;
+	}
+	co2-calculator .lg\:left-1\/3 {
+		left: 33.333333%;
+	}
+	co2-calculator .lg\:shadow-lg {
+		--tw-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+			0 4px 6px -2px rgba(0, 0, 0, 0.05);
+		box-shadow: var(--tw-ring-offset-shadow, 0 0 transparent),
+			var(--tw-ring-shadow, 0 0 transparent), var(--tw-shadow);
+	}
+	co2-calculator .lg\:text-center {
+		text-align: center;
+	}
+	co2-calculator .lg\:whitespace-pre-wrap {
+		white-space: pre-wrap;
+	}
+	co2-calculator .lg\:w-8 {
+		width: 2rem;
+	}
+	co2-calculator .lg\:w-10 {
+		width: 2.5rem;
+	}
+	co2-calculator .lg\:w-12 {
+		width: 3rem;
+	}
+	co2-calculator .lg\:w-16 {
+		width: 4rem;
+	}
+	co2-calculator .lg\:w-20 {
+		width: 5rem;
+	}
+	co2-calculator .lg\:w-24 {
+		width: 6rem;
+	}
+	co2-calculator .lg\:w-28 {
+		width: 7rem;
+	}
+	co2-calculator .lg\:w-32 {
+		width: 8rem;
+	}
+	co2-calculator .lg\:w-40 {
+		width: 10rem;
+	}
+	co2-calculator .lg\:w-60 {
+		width: 15rem;
+	}
+	co2-calculator .lg\:w-64 {
+		width: 16rem;
+	}
+	co2-calculator .lg\:w-80 {
+		width: 20rem;
+	}
+	co2-calculator .lg\:w-96 {
+		width: 24rem;
+	}
+	co2-calculator .lg\:w-auto {
+		width: auto;
+	}
+	co2-calculator .lg\:w-1\/2 {
+		width: 50%;
+	}
+	co2-calculator .lg\:w-2\/3 {
+		width: 66.666667%;
+	}
+	co2-calculator .lg\:w-7\/12 {
+		width: 58.333333%;
+	}
+	co2-calculator .lg\:w-11\/12 {
+		width: 91.666667%;
+	}
+	co2-calculator .lg\:w-full {
+		width: 100%;
+	}
+	co2-calculator .lg\:gap-2 {
+		gap: 0.5rem;
+	}
+	co2-calculator .lg\:gap-4 {
+		gap: 1rem;
+	}
+	co2-calculator .lg\:gap-8 {
+		gap: 2rem;
+	}
+	co2-calculator .lg\:gap-12 {
+		gap: 3rem;
+	}
+	co2-calculator .lg\:gap-28 {
+		gap: 7rem;
+	}
+	co2-calculator .lg\:grid-cols-2 {
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+	}
+	co2-calculator .lg\:grid-cols-3 {
+		grid-template-columns: repeat(3, minmax(0, 1fr));
+	}
+	co2-calculator .lg\:grid-cols-4 {
+		grid-template-columns: repeat(4, minmax(0, 1fr));
+	}
+	co2-calculator .lg\:grid-cols-12 {
+		grid-template-columns: repeat(12, minmax(0, 1fr));
+	}
+	co2-calculator .lg\:col-span-1 {
+		grid-column: span 1 / span 1;
+	}
+	co2-calculator .lg\:col-span-2 {
+		grid-column: span 2 / span 2;
+	}
+	co2-calculator .lg\:grid-rows-3 {
+		grid-template-rows: repeat(3, minmax(0, 1fr));
+	}
+	co2-calculator .lg\:row-span-1 {
+		grid-row: span 1 / span 1;
+	}
+	co2-calculator .lg\:row-span-2 {
+		grid-row: span 2 / span 2;
+	}
+	co2-calculator .lg\:row-span-3 {
+		grid-row: span 3 / span 3;
+	}
+	co2-calculator .lg\:scale-x-100 {
+		--tw-scale-x: 1;
+	}
+}
+@media (min-width: 1024px) and (min-width: 640px) {
+	co2-calculator .lg\:container {
+		max-width: 640px;
+	}
+}
+@media (min-width: 1024px) and (min-width: 768px) {
+	co2-calculator .lg\:container {
+		max-width: 768px;
+	}
+}
+@media (min-width: 1024px) and (min-width: 1024px) {
+	co2-calculator .lg\:container {
+		max-width: 1024px;
+	}
+}
+@media (min-width: 1024px) and (min-width: 1280px) {
+	co2-calculator .lg\:container {
+		max-width: 1280px;
+	}
+}
+@media (min-width: 1024px) and (min-width: 1595px) {
+	co2-calculator .lg\:container {
+		max-width: 1595px;
+	}
+}
+@media (min-width: 1280px) {
+	co2-calculator .xl\:text-xl {
+		font-size: 1.25rem;
+		line-height: 1.75rem;
+	}
+	co2-calculator .xl\:text-4xl {
+		font-size: 2.25rem;
+		line-height: 2.5rem;
+	}
+	co2-calculator .xl\:text-5xl {
+		font-size: 3rem;
+		line-height: 1;
+	}
+	co2-calculator .xl\:-mx-72 {
+		margin-left: -18rem;
+		margin-right: -18rem;
+	}
+	co2-calculator .xl\:mt-0 {
+		margin-top: 0;
+	}
+	co2-calculator .xl\:p-24 {
+		padding: 6rem;
+	}
+	co2-calculator .xl\:right-64 {
+		right: 16rem;
+	}
+	co2-calculator .xl\:right-96 {
+		right: 24rem;
+	}
+	co2-calculator .xl\:w-44 {
+		width: 11rem;
+	}
+	co2-calculator .xl\:gap-12 {
+		gap: 3rem;
+	}
+}
+@media (min-width: 1595px) {
+	co2-calculator .\32xl\:h-5\/6 {
+		height: 83.333333%;
+	}
+}
